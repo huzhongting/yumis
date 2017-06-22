@@ -1,0 +1,39 @@
+#banner{background:#4aa7f7 url(../images/banner.jpg) center no-repeat;height:400px;border-bottom:#e6e6e6 solid 1px}
+#banner .jdForm{float:right;width:346px;height:320px;position:relative;margin-top:30px}
+#banner .jdForm .bg{position:absolute;width:346px;height:340px;background:#000;filter:alpha(opacity=60);-moz-opacity:.6;-khtml-opacity:.6;opacity:.6;z-index:0}
+#banner .jdForm ul{position:absolute;width:266px;height:280px;padding:10px 40px 20px 40px;z-index:10}
+#banner .jdForm ul li{float:left;width:100%;padding:10px 0;position:relative}
+#banner .jdForm ul li h3{text-align:center;color:#fff;font-size:18px;font-weight:normal}
+#banner .jdForm ul li .name{float:left;color:#fff;font-size:14px;line-height:30px;padding-right:8px}
+#banner .jdForm ul li input{float:left;height:20px;width:180px;line-height:20px;padding:4px 10px;border:#ccc solid 1px;font-size:14px;border-radius:2px}
+#banner .jdForm ul li button{background:#3db1fa;border:0;width:100%;height:40px;color:#fff;font-size:16px;cursor:pointer;border-radius:3px;font-weight:bold;outline:0}
+#banner .jdForm ul li .inputRadio{float:left;height:14px;width:14px;overflow:hidden;padding:0;margin:0;margin-top:10px;border:0}
+#banner .jdForm ul li .radioLabel{float:left;height:14px;line-height:14px;font-size:14px;padding:0;margin:0;padding:0 20px 0 5px;margin-top:10px;height:21px;color:#fff}
+#banner .jdForm ul li button:hover{background:#53bafa}
+#banner .jdForm ul li label.error{position:absolute;left:65px;top:40px;color:#f60}
+.jkText{padding:15px 0;text-align:center;background:#fff;font-size:14px;color:#3db1fa;border-bottom:#e6e6e6 solid 1px}
+.jkText em{font-weight:bold;font-size:18px}
+.jkTitle{float:left;width:100%;height:50px;line-height:50px;background:#f8f9fa;border-bottom:#e6e6e6 solid 1px}
+.jkTitle h3{float:left;padding-left:20px;font-size:16px}
+.youshiUl{float:left;width:94%;padding:0 3%;margin-top:5px}
+.youshiUl li{float:left;width:20%;text-align:center;padding:25px 0}
+.youshiUl li i{display:inline-block;background:url(../images/jiekuan.png) no-repeat;width:114px;height:114px}
+.youshiUl li:hover i{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg);-webkit-transition:all 300ms linear;-moz-transition:all 300ms linear;-o-transition:all 300ms linear;-ms-transition:all 300ms linear;transition:all 300ms linear}
+.youshiUl li i.iB{background-position:-120px 0}
+.youshiUl li i.iC{background-position:-240px 0}
+.youshiUl li i.iD{background-position:-360px 0}
+.youshiUl li i.iE{background-position:-480px 0}
+.youshiUl li h3{font-size:16px;font-weight:normal}
+.youshiUl li h3 em{font-size:24px;color:#d70c18}
+.youshiUl li p{padding:5px 0;font-size:14px}
+.about .fl{margin:20px 0 0 40px;display:inline}
+.about .text{float:right;width:40%;padding-right:5%;margin-top:40px}
+.about .text p{line-height:30px;font-size:16px;text-indent:2em;padding-bottom:6px}
+.dlClass{float:left;width:84%;padding:50px 8%}
+.dlClass dl{float:left;width:33.333%;text-align:center;position:relative}
+.dlClass dl dt i{background:url(../images/jiekuan.png) no-repeat;height:134px;width:134px;display:inline-block;background-position:0 -150px}
+.dlClass dl dt i.iB{background-position:-150px -150px}
+.dlClass dl dt i.iC{background-position:-300px -150px}
+.dlClass dl dt h3{color:#ff8e95;font-size:16px;padding:15px 0}
+.dlClass dl dd{font-size:14px;line-height:30px}
+.dlClass .iJiantou{background-position:-450px -150px;height:82px;width:36px;position:absolute;right:-15px;top:28px}

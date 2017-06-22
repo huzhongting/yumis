@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://www.weidai.com.cn/sys/preBorrow.html -->
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/jcss.css"rel="stylesheet" type="text/css">
+    <link href="css/product.css" rel="stylesheet" type="text/css">
+    <link href="css/jiekuan.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript"  src="js/mba.js"></script>
+	<script type="text/javascript"  src="js/mv.js"></script>
+    <script type="text/javascript"  src="js/mvl.js"></script>
+    <script type="text/javascript" src="js/v.js"></script>
+	<script type="text/javascript" src="js/hm.js"></script>
+    <script type="text/javascript">
+        var server_url='';
+        var server_login_user='';
+    </script>
+    <script type="text/javascript">
+        var _mvq = _mvq || [];
+        _mvq.push(['$setAccount', 'm-196950-0']);
+
+        _mvq.push(['$logConversion']);
+        (function() {
+            var mvl = document.createElement('script');
+            mvl.type = 'text/javascript'; mvl.async = true;
+            mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js' : 'http://static.mediav.com/mvl.js');
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(mvl, s);
+        })();
+    </script>
+   
+</head>
+<body>
+
+<div id="top">
+    <div class="layout">
+        <a href="手机鱼米.html" class="topApp"><i></i>手机鱼米</a>
+        <ul> 
+            <li> <a href="注册.html">注册</a> &nbsp; <a href="登录.html">登录</a> </li>
+            <li class="weixin">
+                <a href="javascript:;" class="aQQ"><i></i>官方微信</a>
+                <div class="weixinShow disNone">
+                    <img src="images/weixin.png" alt="微信扫一扫咨询早知道！">
+                    <div class="text">微信扫一扫<br>咨询早知道！</div>
+                </div>
+            </li>
+            <li><a href="帮助中心.html">帮助中心</a></li>
+            <li><a href="新手引导.html">新手引导</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="header">
+    <div class="layout clearfix">
+        <a href=".html" class="logo"><img src="images/logo.png" alt="鱼米网LOGO"></a>
+        
+        <dl>
+            <dt><a href="我的账户.html"><i class="txI"></i>我的账户
+            <i> </i>
+            </a></dt>
+            <dd> <p><a href="账户主页.html">账户主页</a></p>
+                <p><a href="资产管理.html">资产管理</a></p>
+                <p><a href="投标管理.html">投标管理</a></p>
+                <p><a href="个人资料.html">个人资料</a></p>
+                <p><a href="消息管理.html">消息管理</a></p>
+                <p><a href="邀请奖励.html">邀请奖励</a></p>
+                <i></i>
+            </dd>
+        </dl>
+        <ul id="nav">
+            <li class="curr"><a href="index.html">首页</a></li>
+            <li>
+                <a href="我要投资.html">我要投资<i></i></a>
+                <div class="show">
+                    <p><a href="javascript:">热售标</a></p>
+                    <p><a href="javascript:">新手标</a></p>
+                    <p><a href="javascript:">定时标</a></p>
+                    <p><a href="javascript:">定向标</a></p>
+                    <p><a href="javascript:">转让标</a></p>
+                    <p><a href="javascript:">信用标</a></p>
+                    <i></i>
+                </div>
+            </li>
+            <li><a href="我要借款.html">我要借款</a></li>
+            <li><a href="鱼米问答.html">鱼米问答</a></li>
+            <li>
+               <a href="鱼米简介.html">关于鱼米<i></i></a>
+                <div class="show">
+                    <p><a href="鱼米简介.html">鱼米简介</a></p>
+                    <p><a href="团队介绍.html">团队介绍</a></p>
+                    <p><a href="企业文化.html">企业文化</a></p>
+                    <p><a href="办公环境.html">办公环境</a></p>
+                    <p><a href="员工关怀.html">员工关怀</a></p>
+                    <p><a href="联系我们.html">联系我们</a></p>
+                    <i></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	setTimeout("initBbsUrl()",500);
+})
+
+function initBbsUrl(){
+	var bbs_url=$("#bbs_url").attr("href");
+	var mc=$("#message_count_span").text();
+	$("#bbs_url").attr("href",bbs_url+"?m="+mc);
+}
+</script>
+
+
+<!--首页-->
+
+<div id="banner" class="clearfix">
+    <div class="layout">
+        <div class="jdForm">
+            <div class="bg"></div>
+            <form id="jiekuanForm" action="https://www.weidai.com.cn/sys/submitBorrowPre.html" method="post" novalidate>
+                <ul>
+                    <li><h3>我要申请借款</h3></li>
+                    <li>
+                        <label class="name">真实姓名</label>
+                        <input type="text" name="userName" id="userName">
+                    </li>
+                    <li>
+                        <label class="name">手机号码</label>
+                        <input type="text" name="mobile" id="mobile">
+                                            </li>
+                    <li>
+             			<label class="name">是否有车</label>
+            			<input name="isCar" class="inputRadio" id="carA" type="radio" checked="checked" value="0"><label class="radioLabel" for="carA">有车</label>
+             			<input name="isCar" class="inputRadio" id="carB" type="radio" value="1"><label class="radioLabel" for="carB">无车</label>
+
+
+
+           			</li>
+                    <li class="code">
+                        <label class="name" style="margin-left: 14px;">验证码</label>
+                        <input type="text" id="User_imgcode" name="User_imgcode" class="textInput" style="width: 40px">
+                        <img alt="" src="./我要借款_鱼米网官网专业的理财平台_files/getCode.jpg" id="reg_code" style="height:30px; width: 60px; margin-left: 5px">
+                        <a class="aBlue" href="javascript:" id="reg_code1">换一个</a>
+                                            </li>
+                    <li><button type="submit">立即申请</button></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="jkText">
+  <div class="layout clearfix">
+ 		<p class="fl">累计提供贷款 <em>218.42</em>亿，成功提供贷款次数 <em>331708</em>，每笔贷款平均下放时间 <em>2小时</em></p>
+    	<p class="fr">直接咨询贷款专线：<em>4000-89-89-82</em></p>
+  </div>
+</div>
+<div class="height18"></div>
+<div class="layout clearfix borderGray bgWhite">
+    <div class="jkTitle"><h3>借款优势</h3></div>
+    <ul class="youshiUl">
+        <li>
+            <i class="iA"></i>
+            <h3>门槛<em>低</em></h3>
+            <p>月收入2000元即可申请</p>
+        </li>
+        <li>
+            <i class="iB"></i>
+            <h3>额度<em>大</em></h3>
+            <p>最高借款额度达50万元</p>
+        </li>
+        <li>
+            <i class="iC"></i>
+            <h3>放款<em>快</em></h3>
+            <p>3个工作日内即可审核完成</p>
+        </li>
+        <li>
+            <i class="iD"></i>
+            <h3>费率<em>低</em></h3>
+            <p>月综合费率低至0.55%</p>
+        </li>
+        <li>
+            <i class="iE"></i>
+            <h3>不押<em>车</em></h3>
+            <p>钱到账 车照开</p>
+        </li>
+    </ul>
+</div>
+<div class="height18"></div>
+<div class="layout clearfix borderGray bgWhite">
+    <div class="jkTitle"><h3>鱼米网介绍</h3></div>
+    <div class="about">
+        <img class="fl" src="images/map.jpg" alt="">
+        <div class="text">
+            <p>截止2015年6月30日，鱼米网市场布局已经覆盖江浙沪、安徽、江西、广东、山东等十省一市。其中，2013年正式开张18家营业部；2014年正式开张32家营业部，同年在广州成立一家省级分公司；2015年上半年正式开张43家营业部。预计15年共计新增营业部80家，至15年年底，鱼米网营业部共计150家。</p>
+            <img src="images/map2.jpg" alt="">
+        </div>
+        <div class="height18"></div>
+    </div>
+</div>
+<div class="height18"></div>
+<div class="layout clearfix borderGray bgWhite">
+    <div class="jkTitle"><h3>借款流程</h3></div>
+    <div class="dlClass">
+        <dl>
+            <dt>
+                <i class="iA"></i>
+            <h3>第一步 提交贷款信息</h3>
+            <i class="iJiantou"></i>
+            </dt>
+            <dd>车辆评估价值大于3万即可申请</dd>
+            <dd>贷款期限自选，最长时限达36个月</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iB"></i>
+            <h3>第二步 车辆评估及审核</h3>
+            <i class="iJiantou"></i>
+            </dt>
+            <dd>专业成熟的车辆评估体系</dd>
+            <dd>打造高效快速的审批流程</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iC"></i>
+            <h3>第三步 平台放款</h3>
+            </dt>
+            <dd>通过p2p平台进行资金匹配</dd>
+            <dd>借款人快至1天可拿到贷款</dd>
+        </dl>
+    </div>
+</div>
+<div class="height18"></div>
+<div id="footer">
+    <div class="layout">
+        <div class="footerDl">
+            <dl>
+                <dt><a href="我要投资.html">我要投资</a></dt>
+                <dd><a href="新手标的.html">新手标的</a></dd>
+                <dd><a href="自动投标.html">自动投标</a></dd>
+                <dd><a href="常见问题.html" target="_blank">常见问题</a></dd>
+                <dd><a href="收费标准.html" target="_blank">收费标准</a></dd>
+                <dd><a href="债权转让规则.html" target="_blank">债权转让规则</a></dd>
+            </dl>
+            <dl>
+                <dt>安全保障</dt>
+                <dd><a href="安全准备金.html" target="_blank">安全准备金</a></dd>
+                <dd><a href="阳光保险.html" target="_blank">阳光保险</a></dd>
+                <dd><a href="实体经营.html" target="_blank">实体经营</a></dd>
+                <dd><a href="https://www.weidai.com.cn/sys/special1.html" target="_blank">阿里金融云</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="鱼米简介.html" target="_blank">关于鱼米</a></dt>
+                <dd><a href="网站地图.html">网站地图</a></dd>
+                <dd><a href="团队介绍.html" target="_blank">团队介绍</a></dd>
+                <dd><a href="企业文化.html" target="_blank">企业文化</a></dd>
+                <dd><a href="联系我们.html" target="_blank">联系我们</a></dd>
+            </dl>
+        </div>
+        <ul class="telephoneUl">
+            <li>客服专线：<em>400-992-5222</em></li>
+            <li>客服服务时间：9:00-21:00</li>
+            <li><span>关注我们：</span><a href="javascript:;" class="weixin"><img src="images/weixin(1).png" alt=""/></a><a href="http://weibo.com/weidaiwang" rel="nofollow" target="_blank" class="sina"></a></li>
+        </ul>
+        <div class="appDownload"><a href="https://www.weidai.com.cn/sys/special5.html" rel="nofollow" target="_blank"><img src="images/footerImg1.png" alt=""></a></div>
+        <div class="footerText">
+            <p>© 2012-2015 鱼米网 鱼米（杭州）金融信息服务有限公司 版权所有 浙ICP备15029561号-1 </p>
+            <a href="http://www.verisign.com/" rel="nofollow" target="_blank"><img src="images/symantec.png" alt="verisign"></a>
+            <a href="http://t.knet.cn/index_new.jsp" rel="nofollow" target="_blank"><img src="images/kexin.png" alt="可信网站"></a>
+            <a href="http://www.mps.gov.cn/n16/index.html?_v=1442896797517" rel="nofollow" target="_blank"><img src="images/gongan.png" alt="公安"></a>
+            <a href="http://www.ancun.com/" rel="nofollow" target="_blank"><img src="images/anchu.png" alt="安存"></a>
+        </div>
+    </div>
+</div>
+<div class="shade" style="display: none; width: 1920px; height: 1080px;"></div>
+<div id="enger" style="display: none;">
+      <div class="qidongBG">
+        <i class="closeBtn"></i>
+        <div class="welcome">欢迎来到鱼米网，我们&nbsp;<em>5</em>&nbsp;年累计为用户赚钱</div>
+        <span class="money"><em>426918802</em>元</span>
+        <span class="engerBtn">点击进入鱼米 &gt;&gt;</span>
+      </div>
+</div>
+
+
+<script src="./我要借款_鱼米网官网专业的理财平台_files/jquery.validate.min.js"></script><!--表单验证-->
+<script src="./我要借款_鱼米网官网专业的理财平台_files/jquery.methods.js"></script><!--表单验证-->
+
+<script>
+    $("#jiekuanForm").validate({
+        rules: {
+            userName: "required",
+            mobile: {
+                required: true,
+                mobile: true
+            }
+
+        },
+        messages: {
+            userName: "请输入您真实姓名",
+            mobile: {
+                required: "请输入手机号码"
+            },
+            User_imgcode: {
+                required: "请输入验证码"
+            }
+        },
+        submitHandler:function(form) {
+            form.submit();
+        }
+
+    });
+
+    $("#reg_code").click(function (){
+        $(this).attr('src','/reg/getCode.jpg?nocache='+ new Date().getTime());
+    });
+
+    $("#reg_code1").click(function (){
+        $("#reg_code").attr('src','/reg/getCode.jpg?nocache='+ new Date().getTime());
+
+    });
+
+</script>
+    <!-- 右侧浮动窗口 start-->
+    <div class="floatBtn">
+        <ul>
+            <li class="qq"><a href="http://crm2.qq.com/page/portalpage/wpa.php?key=XzkzODAzMzcyMF8xMTU5OTJfNDAwOTkyNTIyMl8&uin=4009925222&f=1&ty=1&aty=0&a=&from=6" target="_blank" class="BtnName">客服<i></i></a><a href="http://crm2.qq.com/page/portalpage/wpa.php?key=XzkzODAzMzcyMF8xMTU5OTJfNDAwOTkyNTIyMl8&uin=4009925222&f=1&ty=1&aty=0&a=&from=6" target="_blank" class="what"><p>在线客服</p><p class="kefuTime">9:00-17:30(工作日)</p></a></li>
+            <li class="compute"><a rel="nofollow" href="计算器.html"  target="_blank" class="BtnName">计算<i></i></a><a rel="nofollow" href="计算器.html" target="_blank" class="what"><p>在线计算器</p></a></li>
+            <li class="watch"><a rel="nofollow" href="javascript:;" class="BtnName">微信<i></i></a><a rel="nofollow" href="javascript:;" class="what"><div class="dingyue"><p>订阅号</p><img src="images/dingyue.png" alt="看我吧！"></div></a></li>
+            <li class="app"><a rel="nofollow" href="javascript:;" class="BtnName">app下载<i></i></a><a rel="nofollow" href="javascript:;" class="what"><p>APP下载</p><img src="images/appdownload.png" alt="快拍我！"></a></li>
+            <li class="kefu" style="background-color: rgb(61, 177, 250);"><a href="https://www.weidai.com.cn/index.html#" class="BtnName" onclick="ysf.open();return false;">七鱼<i></i></a><a href="https://www.weidai.com.cn/index.html#" class="what" onclick="ysf.open();return false;" style="display: none; width: 0px; left: 0px;"><p>在线客服</p><p class="kefuTime">9:00-17:30(工作日)</p></a></li>
+        </ul>
+        <div class="century"><img src="images/daishushidai.png" alt=""></div>
+    </div>
+    <!-- 右侧浮动窗口 end-->
+    
+	<script src="js/public.js"></script>
+	<script src="js/common.js"></script>
+    <script src="js/7830fb1ba03aff3cdbd6e9cc0867b851.js" defer async></script>
+    <a class="backTop"><i></i></a>
+</body>
+</html>

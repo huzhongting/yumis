@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>鱼米金服</title>
+	<link rel="stylesheet" href="css/animate.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/jcss.css"rel="stylesheet" type="text/css">
+    
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    
+    <!---banner js--->
+    <script type="text/javascript" src="js/superfish.js"></script>
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <!---banner js end--->
+    
+    <!---圆圈star--->
+    <script type="text/javascript" src="js/raphael.js"></script>
+    <script type="text/javascript" src="js/BaseInfo.js"></script>
+    <!---圆圈end--->
+    
+    <!--wow-->
+    <script type="text/javascript" src="js/wow.min.js" ></script>
+</head>
+<body>
+    
+<div id="top">
+    <div class="layout">
+        <a href="手机鱼米.html" class="topApp wow bounce" ><i></i>手机鱼米</a>
+        <ul class="wow flash" data-wow-duration="2s"> 
+            <li> <a href="注册.html">注册</a> &nbsp; <a href="登录.html">登录</a> </li>
+            <li class="weixin">
+                <a href="javascript:;" class="aQQ"><i></i>官方微信</a>
+                <div class="weixinShow disNone">
+                    <img src="images/weixin.png" alt="微信扫一扫咨询早知道！">
+                    <div class="text">微信扫一扫<br>咨询早知道！</div>
+                </div>
+            </li>
+            <li><a href="帮助中心.html">帮助中心</a></li>
+            <li><a href="新手引导.html">新手引导</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="header">
+    <div class="layout clearfix">
+        <a href=".html" class="logo wow swing"><img src="images/logo.png" alt="鱼米网LOGO"></a>
+        
+        <dl class="wow shake" data-wow-duration="2s" >
+            <dt><a href="我的账户.html"><i class="txI"></i>我的账户
+            <i> </i>
+            </a></dt>
+            <dd> <p><a href="账户主页.html">账户主页</a></p>
+                <p><a href="资产管理.html">资产管理</a></p>
+                <p><a href="投标管理.html">投标管理</a></p>
+                <p><a href="个人资料.html">个人资料</a></p>
+                <p><a href="消息管理.html">消息管理</a></p>
+                <p><a href="邀请奖励.html">邀请奖励</a></p>
+                <i></i>
+            </dd>
+        </dl>
+        <ul id="nav" class="wow pulse" data-wow-duration="1s" data-wow-delay="1s">
+            <li class="curr"><a href="index.html">首页</a></li>
+            <li>
+                <a href="我要投资.html">我要投资<i></i></a>
+                <div class="show">
+                    <p><a href="javascript:">热售标</a></p>
+                    <p><a href="javascript:">新手标</a></p>
+                    <p><a href="javascript:">定时标</a></p>
+                    <p><a href="javascript:">定向标</a></p>
+                    <p><a href="javascript:">转让标</a></p>
+                    <p><a href="javascript:">信用标</a></p>
+                    <i></i>
+                </div>
+            </li>
+            <li><a href="我要借款.html">我要借款</a></li>
+            <li><a href="鱼米问答.html">鱼米问答</a></li>
+            <li>
+               <a href="鱼米简介.html">关于鱼米<i></i></a>
+                <div class="show">
+                    <p><a href="鱼米简介.html">鱼米简介</a></p>
+                    <p><a href="团队介绍.html">团队介绍</a></p>
+                    <p><a href="企业文化.html">企业文化</a></p>
+                    <p><a href="办公环境.html">办公环境</a></p>
+                    <p><a href="员工关怀.html">员工关怀</a></p>
+                    <p><a href="联系我们.html">联系我们</a></p>
+                    <i></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	setTimeout("initBbsUrl()",300);
+})
+
+function initBbsUrl(){
+	var bbs_url=$("#bbs_url").attr("href");
+	var mc=$("#message_count_span").text();
+	$("#bbs_url").attr("href",bbs_url+"?m="+mc);
+}
+</script>
+<!-- banner star -->
+<div id="et-slider-wrapper" class=" et_slider_auto et_slider_speed_7000 wow bounceInDown">
+	<div id="et-slides">
+		<div class="et-slide" style="background:url(images/banner4.jpg) no-repeat center center;">
+			1
+         </div>
+		<div class="et-slide" style="background: url(images/bannerYangguang.jpg) no-repeat center center;">
+			2
+         </div>
+		<div class="et-slide" style="background: url(images/banner4.jpg) no-repeat center center;">
+			3
+        </div>
+      </div>
+	<!-- #et-slides -->
+    <div class="layout clearfix wow bounceInRight">
+     <div class="jbanner-right">
+      <div class="jbanr-con">
+       <h3><span>鱼米成立5年</span>，投资者按时获取预期收益</h3>
+       <div class="turnVolume">累计成交 <em>218.37</em>亿</div>
+       <div class="but"><a href="注册.html">免费注册</a> </div>
+       <div class="text">已有账户 <a href="登录.html">立即登录</a></div>
+       <div class="regVolume">
+            <span class="left"><em>596383</em> 人<br>鱼米会员</span>
+            <span><em>426918802</em> 元<br>用户收益</span>
+          </div>
+      </div>
+      <div class="showWeima"><img src="images/appD.png" alt=""><p>扫一扫 下载手机APP</p></div>
+      <i class="weima" id="weimaId"></i>
+      <div class="jban-bg"></div>
+     </div>
+    </div>
+    
+  </div>
+   
+<!-- banner end -->
+<div class="height18"></div>
+<div class="layout clearfix">
+  <div class="fl column">
+    <!--新手专享标-->
+    <div class="newProduct borderGray bgWhite clearfix wow rollIn">
+      <dl class="clearfix">
+        <dt class="title">
+          <h3><a href="https://www.weidai.com.cn/bid/tenderList?typeCondition=newBorrow">新手专享标</a></h3>
+          <span>新手会员独享 全体不定时更新</span>
+          <a href="https://www.weidai.com.cn/bid/tenderList?typeCondition=newBorrow" class="more">更多新手项目</a>
+        </dt>
+              		<dd class="ddA"><em>11.20</em>%<p>年化收益</p></dd>
+     		<dd class="ddB"><em>28</em>天 <p>项目期限</p></dd>
+      		<dd class="ddC"><em>50</em>元<p>起投金额</p></dd>
+   	  		     		<dd class="ddD">
+                         <span style="width:70px;"><div class="percent_small"><font style="font-size:14px; color:#3db1fa;  top: -40px; left: 4px;">50%</font>
+              <svg style="overflow: hidden; position: relative; left: -0.5px;" xmlns="http://www.w3.org/2000/svg" width="40" version="1.1" height="40"></svg>
+              
+             </div>
+</span>
+                        </dd>
+                        
+      		<dd class="ddE">
+     		     			<a href="点击投资.html" target="_blank" class="touziBnt">立即投标</a>
+     		      		</dd>
+              </dl>
+    	<a href="新人讲堂一分钟学会理财.html"><img src="images/study.jpg" alt="新人讲堂 一分钟学会理财！"></a>
+      <i class="newI"></i>
+    </div>
+    <!--新手专享标 end-->
+    <!--项目列表-->
+    <div class="height18"></div>
+    <div class="listProduct borderGray bgWhite clearfix wow zoomInDown">
+      <div class="title">
+        <ul>
+          <li class="curr" id="indexbao1" onclick="setTabAll(&#39;indexbao&#39;,1,2);showtab1()">热售标的</li>
+          <li id="indexbao2" onclick="setTabAll(&#39;indexbao&#39;,2,2);showtab2()">转让标的</li>
+        </ul>
+        <p>来自全国<a href="https://www.weidai.com.cn/sys/storeDisplay.html"><em>150</em></a>个鱼米实体店</p>
+        <a href="https://www.weidai.com.cn/bid/tenderList" class="more">全部项目</a>
+      </div>
+      <div id="gTab_indexbao_1"><ul class="listUl">
+       <li>
+         <div class="liA wow bounceInDown">
+          <p>杭州富阳<i class="iconC"></i></p>
+          <h2><a href="#" target="_blank" title="别克英朗抵押续贷标">别克英朗抵押续贷标</a></h2>
+         </div>
+        <div class="liB">11.00%</div>
+        <div class="liC">1个月</div>
+        <div class="liD">44000元</div>
+        <div class="liE">
+         <span style="width:70px;"><div class="percent_small"><font style="font-size:14px; color:#3db1fa;  top: -40px; left: 4px;">100%</font>
+              <svg style="overflow: hidden; position: relative; left: -0.5px;" xmlns="http://www.w3.org/2000/svg" width="40" version="1.1" height="40"></svg>
+              
+             </div>
+</span>
+        
+        </div>
+        <div class="liF"><a href="点击投资.html" target="_blank" class="touziBnt">立即投标</a></div>
+        </li>
+        <li>
+         <div class="liA wow bounceInLeft">
+          <p>杭州富阳<i class="iconC"></i></p>
+          <h2><a href="#" target="_blank" title="别克英朗抵押续贷标">别克英朗抵押续贷标</a></h2>
+         </div>
+        <div class="liB">11.00%</div>
+        <div class="liC">1个月</div>
+        <div class="liD">44000元</div>
+        <div class="liE">
+         <span style="width:70px;"><div class="percent_small"><font style="font-size:14px; color:#3db1fa;  top: -40px; left: 4px;">100%</font>
+              <svg style="overflow: hidden; position: relative; left: -0.5px;" xmlns="http://www.w3.org/2000/svg" width="40" version="1.1" height="40"></svg>
+              
+             </div>
+</span>
+        
+        </div>
+        <div class="liF"><a href="点击投资.html" target="_blank" class="touziBnt">立即投标</a></div>
+        </li>
+        <li>
+         <div class="liA wow bounceInRight">
+          <p>杭州富阳<i class="iconC"></i></p>
+          <h2><a href="#" target="_blank" title="别克英朗抵押续贷标">别克英朗抵押续贷标</a></h2>
+         </div>
+        <div class="liB">11.00%</div>
+        <div class="liC">1个月</div>
+        <div class="liD">44000元</div>
+        <div class="liE">
+         <span style="width:70px;"><div class="percent_small"><font style="font-size:14px; color:#3db1fa;  top: -40px; left: 4px;">100%</font>
+              <svg style="overflow: hidden; position: relative; left: -0.5px;" xmlns="http://www.w3.org/2000/svg" width="40" version="1.1" height="40"></svg>
+              
+             </div>
+</span>
+        
+        </div>
+        <div class="liF"><a href="点击投资.html" target="_blank" class="touziBnt">立即投标</a></div>
+        </li>
+        <li>
+         <div class="liA wow fadeInDownBig">
+          <p>杭州富阳<i class="iconC"></i></p>
+          <h2><a href="#" target="_blank" title="别克英朗抵押续贷标">别克英朗抵押续贷标</a></h2>
+         </div>
+        <div class="liB">11.00%</div>
+        <div class="liC">1个月</div>
+        <div class="liD">44000元</div>
+        <div class="liE">
+         <span style="width:70px;"><div class="percent_small"><font style="font-size:14px; color:#3db1fa;  top: -40px; left: 4px;">100%</font>
+              <svg style="overflow: hidden; position: relative; left: -0.5px;" xmlns="http://www.w3.org/2000/svg" width="40" version="1.1" height="40"></svg>
+              
+             </div>
+</span>
+        
+        </div>
+        <div class="liF"><a href="点击投资.html" target="_blank" class="touziBnt">立即投标</a></div>
+        </li>
+        <li>
+         <div class="liA wow fadeInUpBig">
+          <p>杭州富阳<i class="iconC"></i></p>
+          <h2><a href="#" target="_blank" title="别克英朗抵押续贷标">别克英朗抵押续贷标</a></h2>
+         </div>
+        <div class="liB">11.00%</div>
+        <div class="liC">1个月</div>
+        <div class="liD">44000元</div>
+        <div class="liE">
+         <span style="width:70px;"><div class="percent_small"><font style="font-size:14px; color:#3db1fa;  top: -40px; left: 4px;">60%</font>
+              <svg style="overflow: hidden; position: relative; left: -0.5px;" xmlns="http://www.w3.org/2000/svg" width="40" version="1.1" height="40"></svg>
+              
+             </div>
+</span>
+        
+        </div>
+        <div class="liF"><a href="点击投资.html" target="_blank" class="touziBnt">立即投标</a></div>
+        </li>
+        <li>
+         <div class="liA wow zoomInDown">
+          <p>杭州富阳<i class="iconC"></i></p>
+          <h2><a href="#" target="_blank" title="别克英朗抵押续贷标">别克英朗抵押续贷标</a></h2>
+         </div>
+        <div class="liB">11.00%</div>
+        <div class="liC">1个月</div>
+        <div class="liD">44000元</div>
+        <div class="liE">
+         <span style="width:70px;"><div class="percent_small"><font style="font-size:14px; color:#3db1fa;  top: -40px; left: 4px;">30%</font>
+              <svg style="overflow: hidden; position: relative; left: -0.5px;" xmlns="http://www.w3.org/2000/svg" width="40" version="1.1" height="40"></svg>
+              
+             </div>
+</span>
+        
+        </div>
+        <div class="liF"><a href="点击投资.html" target="_blank" class="touziBnt">立即投标</a></div>
+        </li>
+        <li>
+         <div class="liA wow zoomInUp">
+          <p>杭州富阳<i class="iconC"></i></p>
+          <h2><a href="#" target="_blank" title="别克英朗抵押续贷标">别克英朗抵押续贷标</a></h2>
+         </div>
+        <div class="liB">11.00%</div>
+        <div class="liC">1个月</div>
+        <div class="liD">44000元</div>
+        <div class="liE">
+         <span style="width:70px;"><div class="percent_small"><font style="font-size:14px; color:#3db1fa;  top: -40px; left: 4px;">100%</font>
+              <svg style="overflow: hidden; position: relative; left: -0.5px;" xmlns="http://www.w3.org/2000/svg" width="40" version="1.1" height="40"></svg>
+              
+             </div>
+</span>
+        
+        </div>
+        <div class="liF"><a href="点击投资.html" target="_blank" class="touziBnt">立即投标</a></div>
+        </li>
+        <li>
+         <div class="liA wow zoomInLeft">
+          <p>杭州富阳<i class="iconC"></i></p>
+          <h2><a href="#" target="_blank" title="别克英朗抵押续贷标">别克英朗抵押续贷标</a></h2>
+         </div>
+        <div class="liB">11.00%</div>
+        <div class="liC">1个月</div>
+        <div class="liD">44000元</div>
+        <div class="liE">
+         <span style="width:70px;"><div class="percent_small"><font style="font-size:14px; color:#3db1fa;  top: -40px; left: 4px;">20%</font>
+              <svg style="overflow: hidden; position: relative; left: -0.5px;" xmlns="http://www.w3.org/2000/svg" width="40" version="1.1" height="40"></svg>
+              
+             </div>
+</span>
+        
+        </div>
+        <div class="liF"><a href="点击投资.html" target="_blank" class="touziBnt">立即投标</a></div>
+        </li>
+        <!---list end---->
+       </ul></div>
+         
+      <div id="gTab_indexbao_2" class="disNone">
+        <ul class="listUl listUl2">
+        <li><div class="liA"><p>四川遂宁</p><h2><a href="/bid/showBorrowDetail?bid=323157" target="_blank" title="奔驰S300L抵押标">奔驰S300L抵押标</a></h2></div><div class="liB">13.20%</div><div class="liC">剩余35期</div><div class="liD">81915.47元</div><div class="liF"><a href="/ucenter/bid/carryOn?uid=322534&amp;
+	bid=323157" target="_blank" class="touziBnt">承接</a></div></li>
+    <li><div class="liA"><p>杭州临平<i class="iconD"></i></p><h2><a href="/bid/showBorrowDetail?bid=309780" target="_blank" title="大众途观抵押3个月">大众途观抵押3个月</a></h2></div><div class="liB">11.00%</div><div class="liC">剩余2期</div><div class="liD">25982.76元</div><div class="liF"><a href="/ucenter/bid/carryOn?uid=235343&amp;
+	bid=309780" target="_blank" class="touziBnt">承接</a></div></li>
+    <li><div class="liA"><p>台州站</p><h2><a href="/bid/showBorrowDetail?bid=344212" target="_blank" title="宝马523Li抵押贷款">宝马523Li抵押贷款</a></h2></div><div class="liB">11.20%</div><div class="liC">剩余3期</div><div class="liD">77534.71元</div><div class="liF"><a href="/ucenter/bid/carryOn?uid=16482&amp;
+	bid=344212" target="_blank" class="touziBnt">承接</a></div></li>
+    <li><div class="liA"><p>沈阳二店</p><h2><a href="/bid/showBorrowDetail?bid=343274" target="_blank" title="现代朗动抵押标">现代朗动抵押标</a></h2></div><div class="liB">11.20%</div><div class="liC">剩余3期</div><div class="liD">51744.36元</div><div class="liF"><a href="/ucenter/bid/carryOn?uid=16482&amp;
+	bid=343274" target="_blank" class="touziBnt">承接</a></div></li>
+    <li><div class="liA"><p>苏州昆山</p><h2><a href="/bid/showBorrowDetail?bid=341725" target="_blank" title="大众朗逸牌汽车抵押12个月">大众朗逸牌汽车抵押12个月</a></h2></div><div class="liB">13.20%</div><div class="liC">剩余11期</div><div class="liD">36789.83元</div><div class="liF"><a href="/ucenter/bid/carryOn?uid=16482&amp;
+	bid=341725" target="_blank" class="touziBnt">承接</a></div></li>
+    <li><div class="liA"><p>徐州站</p><h2><a href="/bid/showBorrowDetail?bid=341607" target="_blank" title="别克凯越抵押24个月">别克凯越抵押24个月</a></h2></div><div class="liB">13.20%</div><div class="liC">剩余23期</div><div class="liD">31778.02元</div><div class="liF"><a href="/ucenter/bid/carryOn?uid=16482&amp;
+	bid=341607" target="_blank" class="touziBnt">承接</a></div></li>
+    <li><div class="liA"><p>广东中山</p><h2><a href="/bid/showBorrowDetail?bid=359520" target="_blank" title="别克凯越抵押">别克凯越抵押</a></h2></div><div class="liB">11.20%</div><div class="liC">剩余4期</div><div class="liD">30938元</div><div class="liF"><a href="/ucenter/bid/carryOn?uid=19691&amp;
+	bid=359520" target="_blank" class="touziBnt">承接</a></div></li>
+    <li><div class="liA"><p>四川遂宁</p><h2><a href="/bid/showBorrowDetail?bid=359559" target="_blank" title="力帆620抵押标">力帆620抵押标</a></h2></div><div class="liB">13.20%</div><div class="liC">剩余24期</div><div class="liD">27790.19元</div><div class="liF"><a href="/ucenter/bid/carryOn?uid=19691&amp;
+	bid=359559" target="_blank" class="touziBnt">承接</a></div></li>
+    </ul>
+      </div>
+    </div>
+   
+    <!--项目列表 end-->
+    <div class="height18"></div>
+    <a href="https://www.weidai.com.cn/ucenter/bid/autoTenderSetting"><img src="images/autoBid.jpg" alt=""></a>
+    <!--鱼米风采-->
+    <div class="height18"></div>
+    <div class="news borderGray bgWhite clearfix wow slideInLeft" data-wow-duration="2s" data-wow-delay="2s">
+      <div class="title">
+        <h3>鱼米风采</h3>
+        <a href="http://bbs.weidai.com.cn/forum.php?mod=forumdisplay&fid=32" class="more">更多</a>
+      </div>
+      <div class="dlClass clearfix">
+        <dl>
+          <dt>
+			  <a rel="nofollow" href="http://mp.weixin.qq.com/s?__biz=MjM5ODA2NzU5Mg==&mid=215264167&idx=1&sn=ccccd7672e576c4d045f8ae64f30fe12#rd" target="_blank">
+			 	 <img src="images/news2.jpg" alt="">
+		      </a>
+			  <h3><a rel="nofollow" href="http://mp.weixin.qq.com/s?__biz=MjM5ODA2NzU5Mg==&mid=215264167&idx=1&sn=ccccd7672e576c4d045f8ae64f30fe12#rd" target="_blank">鱼米网四周年晚宴在杭州第一世界大酒店隆重举行</a></h3>
+		  </dt>
+          <dd>有一种座无虚席，它叫做鱼米网四周年晚会；有一种魅力四射，它叫做鱼米网四周年晚会；有一种惊喜连连......</dd>
+        </dl>
+        <dl>
+          <dt>
+			  <a rel="nofollow" href="http://mp.weixin.qq.com/s?__biz=MjM5ODA2NzU5Mg==&mid=215264144&idx=1&sn=192cacb674564590b29c8bb0c5a17d50#rd" target="_blank">
+				  <img src="images/news1.jpg" alt="">
+			  </a>
+			<h3><a rel="nofollow" href="javascript:" target="_blank">杭州市江干区委书记盛阅春一行调研鱼米网杭州总部</a></h3></dt>
+          <dd>杭州市江干区委书记盛阅春一行专程赶赴位于杭州财富金融中心的鱼米网公司总部进行调研视察......</dd>
+        </dl>
+        <dl>
+          <dt>
+        <a rel="nofollow" href="javascript:" target="_blank">
+          <img src="images/news3.jpg" alt="鱼米网创始人、CEO姚宏获胡润百富青年领袖奖">
+        </a>
+        <h3><a rel="nofollow" href="javascript:" target="_blank">鱼米网创始人、CEO姚宏获胡润百富青年领袖奖</a></h3>
+      </dt>
+          <dd>11月27日，2015年胡润百富周年庆暨颁奖晚宴在北京隆重举行。鱼米网创始人、CEO姚宏被授予“青年领袖奖”荣誉...</dd>
+        </dl>
+      </div>
+    </div>
+    <!--鱼米风采 end-->
+  </div>
+  <div class="fr sidebar">
+  	<a href="https://www.weidai.com.cn/sys/special5.html"><img src="images/mobile.jpg" alt="随时随地手机理财"></a>
+    <div class="height18"></div>
+  <!--数据宝盒-->
+    <div class="borderGray bgWhite clearfix mumber wow rotateInUpLeft">
+        <div class="title"><h3>数据宝盒</h3><a href="https://www.weidai.com.cn/dataBox/data" class="more">更多数据</a></div>
+      <div class="dayMumber"><p>今日投资额 <em>1536.59</em> 万元</p><span><em>267</em> 笔</span></div>
+      <div class="mumberMain">
+          <img src="images/indexTj.jpg" alt="">
+	  </div>
+      <div class="text"><a rel="nofollow" href="http://mp.weixin.qq.com/s?__biz=MjM5ODA2NzU5Mg==&mid=215221278&idx=1&sn=00c81bf211509d614bcf9313912a25b5&scene=1&srcid=DmmetUW9wwvbDXDnHcPg&key=dffc561732c2265145a00964d7788afe9362b6e2399c4b270388c3e932b95088cf4bee68a0dc929f334d29de9b1909ba&ascene=0&uin=NDA2NDc3NQ%3D%3D&devicetype=iMac+MacBookAir6%2C2+OSX+OSX+10.10.4+build%2814E46%29&version=11000003&pass_ticket=hd8tJEL8wdTEqwDDdYB%2BmxmkjjuJNYheTZjm6urr0rw%3D" target="_blank"><img src="images/pingan.jpg"></a><p>风险备用金（平安银行存管）</p><em><a rel="nofollow" href="http://mp.weixin.qq.com/s?__biz=MjM5ODA2NzU5Mg==&mid=215221278&idx=1&sn=00c81bf211509d614bcf9313912a25b5&scene=1&srcid=DmmetUW9wwvbDXDnHcPg&key=dffc561732c2265145a00964d7788afe9362b6e2399c4b270388c3e932b95088cf4bee68a0dc929f334d29de9b1909ba&ascene=0&uin=NDA2NDc3NQ%3D%3D&devicetype=iMac+MacBookAir6%2C2+OSX+OSX+10.10.4+build%2814E46%29&version=11000003&pass_ticket=hd8tJEL8wdTEqwDDdYB%2BmxmkjjuJNYheTZjm6urr0rw%3D" class="aRed" target="_blank">4074.34</a>万元</em></div>
+    </div>
+    <!--数据宝盒 end-->
+    <!--官方公告-->
+    <div class="height18"></div>
+    <div class="borderGray bgWhite clearfix notice wow lightSpeedIn" data-wow-delay="3s">
+      <div class="title"><h3>官方公告</h3><a href="http://bbs.weidai.com.cn/portal.php?mod=list&catid=6" class="more">更多</a></div>
+     
+      <div>
+<ul>
+<li><a href="http://bbs.weidai.com.cn/portal.php?mod=view&aid=310" title="鱼米网关于开设新手体验标的公告" target="_blank">鱼米网关于开设新手体验标的公告</a><span>2015-12-15</span></li>
+<li><a href="http://bbs.weidai.com.cn/portal.php?mod=view&aid=309" title="关于鱼米网iOS3.1版本在APP Store正式上线的公告" target="_blank">关于鱼米网iOS3.1版本在APP Store正式</a><span>2015-11-23</span></li>
+<li><a href="http://bbs.weidai.com.cn/portal.php?mod=view&aid=307" title="关于鱼米网停机升级的公告" target="_blank">关于鱼米网停机升级的公告</a><span>2015-10-23</span></li>
+<li><a href="http://bbs.weidai.com.cn/portal.php?mod=view&aid=306" title="关于2015年10月22日晚鱼米网服务器临时停机维护的公告" target="_blank">关于2015年10月22日晚鱼米网服务器临</a><span>2015-10-22</span></li>
+<li><a href="http://bbs.weidai.com.cn/portal.php?mod=view&aid=304" title="关于2015年10月19日晚鱼米网服务器将停机维护的公告" target="_blank">关于2015年10月19日晚鱼米网服务器将</a><span>2015-10-19</span></li>
+</ul>
+</div>
+    </div>
+    <!--官方公告 end-->
+    <!--理财风云榜单-->
+    <div class="height18"></div>
+    <div class="borderGray bgWhite clearfix ranking wow flipInY">
+      <div class="title"><h3>理财风云榜单</h3><p></p></div>
+      <ul class="clearfix">
+              <li class="curr"><span>1</span>用户 &nbsp;&nbsp;&nbsp; 183*****732 <em>14719554.27元</em></li>
+
+              <li class="curr"><span>2</span>用户 &nbsp;&nbsp;&nbsp; 195*****101 <em>6792042.30元</em></li>
+
+              <li class="curr"><span>3</span>用户 &nbsp;&nbsp;&nbsp; 139*****077 <em>5410285.67元</em></li>
+
+              <li><span>4</span>用户 &nbsp;&nbsp;&nbsp; 137*****417 <em>4804062.46元</em></li>
+
+              <li><span>5</span>用户 &nbsp;&nbsp;&nbsp; 139*****881 <em>4516036.70元</em></li>
+
+            </ul>
+    </div>
+    <!--理财风云榜单 end-->
+    <!--广告-->
+    <div class="height18"></div>
+    <a class="wow fadeInRightBig" href="https://www.weidai.com.cn/ucenter/invitationAward.html"><img src="images/img1.jpg" alt="投资理财邀请送现金奖励"></a>
+      <div class="height18"></div>
+      <a class="wow fadeInLeftBig" href="https://www.weidai.com.cn/sys/special4.html"><img src="images/img3.jpg" alt="新人投资理财送三重礼"></a>
+
+      <!--广告 end-->
+  </div>
+</div>
+<div class="height18"></div>
+<!--鱼米合作伙伴-->
+<div class="layout wow bounceInUp" id="cooperate">
+    <div class="title"><h3>鱼米合作伙伴</h3></div>
+    <div class="height10"></div>
+    <ul class="clearfix">
+        <li><img src="images/6.png" alt="阿里金融云"></li>
+        <li><img src="images/8.jpg" alt="连连支付"></li>
+        <li><img src="images/9.jpg" alt="平安银行"></li>
+        <li><img src="images/10.jpg" alt="阳光保险"></li>
+        <li><img src="images/6.png" alt="仁润科技"></li>
+        <li><img src="images/12.jpg" alt="浙江在线"></li>
+    </ul>
+</div>
+<!--鱼米合作伙伴 end-->
+<div class="height18"></div>
+<!--友情链接-->
+<div class="layout links wow wobble">
+    <div class="title"><h3>友情链接</h3></div>
+    <ul>
+        <li><a href="http://www.qianzhan.com/indynews/" target="_blank">前瞻财经</a></li>
+        <li><a href="http://www.wangdaizhijia.com/" rel="nofollow" target="_blank">网贷之家</a></li>
+        <li><a href="http://stock.laoqianzhuang.com/" target="_blank">老钱庄</a></li>
+        <li><a href="http://www.p2peye.com/" target="_blank">网贷天眼</a></li>
+        <li><a href="https://www.weidai.com.cn/" target="_blank">P2P网贷</a></li>
+        <li><a href="https://www.weidai.com.cn/sys/preBorrow.html" target="_blank">汽车抵押贷款</a></li>
+        <li><a href="https://www.weidai.com.cn/" target="_blank">投资理财</a></li>
+        <li><a href="https://www.weidai.com.cn/" target="_blank">P2P理财</a></li>
+        <li><a href="https://www.weidai.com.cn/" target="_blank">互联网金融</a></li>
+        <li><a href="https://www.weidai.com.cn/sys/preBorrow.html" target="_blank">网络贷款</a></li>
+        <li><a href="https://www.weidai.com.cn/sys/preBorrow.html" target="_blank">网络借贷</a></li>
+        <li><a href="https://www.weidai.com.cn/" target="_blank">民间借贷</a></li>
+        <li><a href="https://www.weidai.com.cn/sys/preBorrow.html" target="_blank">P2P贷款</a></li>
+        <li><a href="https://www.weidai.com.cn/" target="_blank">短期贷款</a></li>
+        <li><a href="https://www.weidai.com.cn/" target="_blank">短期理财</a></li>
+        <li><a href="https://www.weidai.com.cn/" target="_blank">个人理财</a></li>
+        <li><a href="https://www.weidai.com.cn/" target="_blank">网上借贷</a></li>
+    </ul>
+</div>
+<!--友情链接 end-->
+<div class="height18"></div>
+<div class="height18"></div>
+<!--首页 end-->
+
+<div id="footer" class="wow rotateInDownLeft">
+    <div class="layout">
+        <div class="footerDl">
+            <dl>
+                <dt><a href="我要投资.html">我要投资</a></dt>
+                <dd><a href="新手标的.html">新手标的</a></dd>
+                <dd><a href="自动投标.html">自动投标</a></dd>
+                <dd><a href="常见问题.html" target="_blank">常见问题</a></dd>
+                <dd><a href="收费标准.html" target="_blank">收费标准</a></dd>
+                <dd><a href="债权转让规则.html" target="_blank">债权转让规则</a></dd>
+            </dl>
+            <dl>
+                <dt>安全保障</dt>
+                <dd><a href="安全准备金.html" target="_blank">安全准备金</a></dd>
+                <dd><a href="阳光保险.html" target="_blank">阳光保险</a></dd>
+                <dd><a href="实体经营.html" target="_blank">实体经营</a></dd>
+                <dd><a href="https://www.weidai.com.cn/sys/special1.html" target="_blank">阿里金融云</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="关于鱼米.html" target="_blank">关于鱼米</a></dt>
+                <dd><a href="网站地图.html">网站地图</a></dd>
+                <dd><a href="团队介绍.html" target="_blank">团队介绍</a></dd>
+                <dd><a href="企业文化.html" target="_blank">企业文化</a></dd>
+                <dd><a href="联系我们.html" target="_blank">联系我们</a></dd>
+            </dl>
+        </div>
+        <ul class="telephoneUl">
+            <li>客服专线：<em>400-992-5222</em></li>
+            <li>客服服务时间：9:00-21:00</li>
+            <li><span>关注我们：</span><a href="javascript:;" class="weixin"><img src="images/weixin(1).png" alt=""/></a><a href="http://weibo.com/weidaiwang" rel="nofollow" target="_blank" class="sina"></a></li>
+        </ul>
+        <div class="appDownload"><a href="https://www.weidai.com.cn/sys/special5.html" rel="nofollow" target="_blank"><img src="images/footerImg1.png" alt=""></a></div>
+        <div class="footerText">
+            <p>© 2012-2015 鱼米网 鱼米（杭州）金融信息服务有限公司 版权所有 浙ICP备15029561号-1 </p>
+            <a href="http://www.verisign.com/" rel="nofollow" target="_blank"><img src="images/symantec.png" alt="verisign"></a>
+            <a href="http://t.knet.cn/index_new.jsp" rel="nofollow" target="_blank"><img src="images/kexin.png" alt="可信网站"></a>
+            <a href="http://www.mps.gov.cn/n16/index.html?_v=1442896797517" rel="nofollow" target="_blank"><img src="images/gongan.png" alt="公安"></a>
+            <a href="http://www.ancun.com/" rel="nofollow" target="_blank"><img src="images/anchu.png" alt="安存"></a>
+        </div>
+    </div>
+</div>
+<!--<div class="shade" style="display: none; width: 1920px; height: 1080px;"></div>
+<div id="enger" style="display: none;">
+      <div class="qidongBG">
+        <i class="closeBtn"></i>
+        <div class="welcome">欢迎来到鱼米网，我们&nbsp;<em>5</em>&nbsp;年累计为用户赚钱</div>
+        <span class="money"><em>426918802</em>元</span>
+        <span class="engerBtn">点击进入鱼米 &gt;&gt;</span>
+      </div>
+</div>-->
+<!--
+<script type="text/javascript">
+var timeFlag=true;
+var tabFlag1=true;
+var tabFlag2=true;
+$(document).ready(function(){
+	showtab1();
+});
+function showtab1(){
+	if(tabFlag1){
+		tabFlag1=false;
+	}else{
+		return;
+	}
+	var page_index =  1;
+    var typeCondition = "other";
+	var startBetweenMonth = 0;
+	var endBetweenMonth = 0;
+	var rows = 8;
+	var month = "allMonth";
+	//$("#gTab_indexbao_1").html("");
+	$.ajax({
+		url:'/bid/tenderListJson',
+		dataType:'json',
+		data:{"typeCondition":typeCondition,"startBetweenMonth":startBetweenMonth,"endBetweenMonth":endBetweenMonth,"searchFlag":"search","month":month,"page":page_index,"rows":rows},
+		cach:false,
+		success:function(da){
+			var html="";
+			html=html+"<ul class=\"listUl\">";
+			for(var i=0;i<da.length;i++){
+			   var awardAmonut="";
+			   var isTime=0;
+		       html=html+"<li>"
+		          +"<div class=\"liA\">"
+		          +"<p>"+da[i].sName;
+		          if(da[i].isDirectional){
+		        	 html=html+"<i class=\"iconA\"></i>"
+		          }
+		         if(parseFloat(da[i].awardAmonut)>0&&parseFloat(da[i].awardAmonut)<1){
+		        	  html=html+"<i class=\"iconB\"></i>"
+			          awardAmonut=parseFloat(da[i].awardAmonut*10000)/100;
+		        	  awardAmonut="+"+parseFloat(awardAmonut).toFixed(2)+"%";
+		          }
+		          if(da[i].sTime){
+		        	 html=html+"<i class=\"iconC\"></i>"
+		        	 isTime=1;
+		          }
+		          if(da[i].password){
+		        	 html=html+"<i class=\"iconD\"></i>"
+		          }
+		           if(da[i].productTypeId==2){	
+		        	  html=html+"<i class=\"iconF\"></i> ";
+		          }
+		          html=html+"</p>"
+		          +"<h2><a href=\"/bid/showBorrowDetail?bid="+da[i].id+"&timing="+isTime+"\" target=\"_blank\" title=\""+da[i].title+"\">"+da[i].title+"</a></h2>"
+		          +"</div>"
+		          +"<div class=\"liB\">"+parseFloat(da[i].borrowAnnualYield).toFixed(2)+"%"+awardAmonut+"</div>"
+		          +"<div class=\"liC\">"+da[i].borroePeriod;
+		          if(da[i].periodTimeUnit=="0"){
+		          	  html=html+"天";
+		          }else{
+		        	  html=html+"个月";
+		          }
+		          html=html+"</div>"
+		          +"<div class=\"liD\">"+da[i].borrowAmount+"元</div>"
+		          +"<div class=\"liE\"><div class=\"meter\" style=\"background-position:-"+parseInt(da[i].borrowedCompletionRate)*55+"px 0\">"+parseInt(da[i].borrowedCompletionRate)+"%</div></div>";
+		          //投标按钮
+		          if(da[i].status=="TENDERTING"){
+		        	  if(!da[i].isTender&&da[i].sTime&&parseInt(da[i].borrowedCompletionRate)<100){
+		        		 	 html=html +"<div class=\"liF\"><span id=\""+da[i].id+"_time\" class=\"touziBnt jsCountDown\" data-time=\""+da[i].sTime+"\" data-sysdate=\"\">"+da[i].showTimeD+"</span>"
+		 		   				+"<a id=\""+da[i].id+"_time_start\" style=\"display:none\" href=\"/bid/showBorrowDetail?bid="+da[i].id+"&timing="+isTime+"\" target=\"_blank\" class=\"touziBnt\">立即投标</a></div>";
+		        	  }else{
+		        		  html=html+"<div class=\"liF\"><a href=\"/bid/showBorrowDetail?bid="+da[i].id+"&timing="+isTime+"\" target=\"_blank\" class=\"touziBnt\">立即投标</a></div>";
+		        	  }
+	        	  }else if(da[i].status=="WAIT_RE_VERIFY"){
+	        		  html=html+"<div class=\"liF\"><a href=\"/bid/showBorrowDetail?bid="+da[i].id+"\" target=\"_blank\"  class=\"touziBntNo\">已满标</a></div>";
+	          	  }else if(da[i].status=="REPAYING"){
+	        		  html=html+"<div class=\"liF\"><a href=\"/bid/showBorrowDetail?bid="+da[i].id+"\" target=\"_blank\"  class=\"touziBntNo\">还款中</a></div>";
+	        	  }else if(da[i].status=="CLOSE"){
+	        		  html=html+"<div class=\"liF\"><a href=\"/bid/showBorrowDetail?bid="+da[i].id+"\" target=\"_blank\"  class=\"touziBntNo\">已还款</a></div>";
+	        	  }
+		          if(da[i].productTypeId==3){	
+		        	  html=html+"<i class=\"miaoIcon\"></i> ";
+		          }
+		          if(da[i].isMobileTender){
+		        	   html=html+"<i class=\"shouIcon\"></i> ";
+		          }
+		          html=html+"</li>";
+			}
+			html=html+"</ul>";
+			$("#gTab_indexbao_1")[0].innerHTML=html;
+		
+			//倒计时
+			//if(timeFlag){
+				//timeFlag= false;
+			$(".jsCountDown").each(function(index, element) {
+	 			var downTime=$(this).attr("data-time"),sysdate=$(this).attr("data-sysdate");
+				countDownT(downTime,$(this).attr("id"))
+			});
+			//}
+
+		}
+	});
+}
+
+function showtab2(){
+	if(tabFlag2){
+		tabFlag2=false;
+	}else{
+		return;
+	}
+	var page_index =  1;
+    var typeCondition = "debt";
+	var startBetweenMonth = 0;
+	var endBetweenMonth = 0;
+	var rows = 8;
+	var month = "allMonth";
+	$.ajax({
+		url:'/bid/tenderListJson',
+		dataType:'json',
+		data:{"typeCondition":typeCondition,"startBetweenMonth":startBetweenMonth,"endBetweenMonth":endBetweenMonth,"searchFlag":"search","month":month,"page":page_index,"rows":rows},
+		cach:false,
+		success:function(da){
+			var html="";
+			var awardAmonut="";
+			html=html+"<ul class=\"listUl listUl2\">";
+			for(var i=0;i<da.length;i++){
+			   html=html+"<li>"
+		          +"<div class=\"liA\">"
+		          +"<p>"+da[i].sName;
+		          if(da[i].bcrPassword){
+		        	 html=html+"<i class=\"iconD\"></i>"
+		          }
+		          html=html+"</p>"
+		          +"<h2><a href=\"/bid/showBorrowDetail?bid="+da[i].id+"\" target=\"_blank\" title=\""+da[i].title+"\">"+da[i].title+"</a></h2>"
+		          +"</div>"
+		          +"<div class=\"liB\">"+parseFloat(da[i].borrowAnnualYield).toFixed(2)+"%</div>"
+		          +"<div class=\"liC\">剩余"+da[i].bcrRecoverPeriod+"期";
+		          html=html+"</div>"
+		          +"<div class=\"liD\">"+da[i].bcrTransferPrice+"元</div>"
+		          if(da[i].bcrStatus=="WAIT_TRANSFER"){
+        			  html=html+"<div class=\"liF\"><a href=\"/ucenter/bid/carryOn?uid="+da[i].debtUid+"&bid="+da[i].id+"\" target=\"_blank\" class=\"touziBnt\">承接</a></div>";
+        		  }else if(da[i].bcrStatus=="TRANSFERED"){
+        			  html=html+"<div class=\"liF\"><a href=\"/bid/showBorrowDetail?bid="+da[i].id+"\" target=\"_blank\" class=\"touziBntNo\">已转让</a></div>";
+        		  }
+		        html=html+"</li>";
+			}
+			html=html+"</ul>";
+			$("#gTab_indexbao_2")[0].innerHTML=html;
+		}
+	});
+}
+
+function countDownT(time,id){
+	if(!time){
+		$("#"+id).css("display","none");
+		$("#"+id+"_start").css("display","block");
+	}
+	var arr=time.split("-");
+	var start_time = new Date(arr[0]).getTime();
+	var now_time = new Date(arr[1]).getTime();
+	var sys_second = (start_time-now_time)/1000;
+	var timer = setInterval(function(){
+		if (sys_second > 1) {
+			sys_second -= 1;
+			var day = Math.floor((sys_second / 3600) / 24);
+			var hour = Math.floor((sys_second / 3600) % 24)+(day*24);
+			var minute = Math.floor((sys_second / 60) % 60);
+			var second = Math.floor(sys_second % 60);
+			$("#"+id).html(hour+"小时"+minute+"分"+second+"秒");
+		} else {
+			clearInterval(timer);
+			$("#"+id).css("display","none");
+			$("#"+id+"_start").css("display","block");
+		}
+	}, 1000);
+}
+
+</script>-->
+<script type="text/javascript">
+/**图片切换*/
+(function($){
+	$.fn.imgsoll=function(){
+		var thisId=$(this),index=1,len=thisId.find("li").length,picTimer;
+		//调用数字HTML函数
+		thisId.append($.fn.imgsoll.bnt(len))
+		//数字hover事件
+		var spanHtml=thisId.find(".bntHtml span");
+		spanHtml.hover(function(){
+		  index  = spanHtml.index(this);
+			showImg(index,spanHtml,thisId);
+		})
+		//鼠标滑上焦点图时停止自动播放，滑出时开始自动播放
+		thisId.hover(function() {
+			clearInterval(picTimer);
+		},function() {
+			picTimer = setInterval(function() {
+				showImg(index,spanHtml,thisId);
+				index++;
+				if(index == len) {index = 0;}
+			},4000); //此4000代表自动播放的间隔，单位：毫秒
+		}).trigger("mouseleave");
+	}
+	//加入数字HTML函数
+	$.fn.imgsoll.bnt=function(len)
+	{
+		var html="";
+		for(var i=1; i<=len; i++ )
+	  {
+			if(i==1)
+				html=html+"<span class='curr'></span>";
+			else
+				html=html+"<span></span>";
+	  }
+		return "<div class='layout'><div class='bntHtml'>"+html+"</div></div>";
+	}
+	//动作方法
+	function showImg(n,spanHtml,thisId)
+	{
+		thisId.find("li").eq(n).stop(true,true).fadeIn(1000).siblings().fadeOut(1000);
+		spanHtml.eq(n).addClass("curr").siblings().removeClass("curr");
+	}
+
+
+})(jQuery);
+/**  图片切换 end*/
+
+//banner 轮播图上二维码的下拉
+$("#jsBannerSoll").imgsoll();
+
+$("#weimaId").click(function(){
+	if($(this).hasClass("weima"))
+	{
+  	$(".showWeima").animate({top:"0"});
+		$(this).removeClass("weima").addClass("colse");
+	}
+	else
+	{
+  	$(".showWeima").animate({top:"-330px"});
+		$(this).removeClass("colse").addClass("weima");
+	}
+})
+//一开始进来的弹窗
+if (document.cookie.length>=0){
+	var start=document.cookie.indexOf("weidai_index_cookie");　　//通过String对象的indexOf()来检查这个cookie是否存在，不存在就为 -1
+	if (start==-1){
+		$('.shade').show();
+	    $('#enger').show();
+	}
+}
+
+$('.shade').css('width',window.screen.width);
+$('.shade').css('height',window.screen.height);
+$('#enger .engerBtn,.closeBtn,.shade').click(function(){
+    $('.shade').css('display','none');
+    $('#enger').css('display','none');
+    var Days = 30;
+    var exp = new Date(); 
+    exp.setTime(exp.getTime() + Days*24*60*60*1000);
+    document.cookie='weidai_index_cookie=1;expires=' + exp.toGMTString();
+})
+</script>
+
+
+    <!-- 右侧浮动窗口 start-->
+    <div class="floatBtn wow zoomIn" data-wow-offset="100">
+        <ul>
+            <li class="qq"><a href="http://crm2.qq.com/page/portalpage/wpa.php?key=XzkzODAzMzcyMF8xMTU5OTJfNDAwOTkyNTIyMl8&uin=4009925222&f=1&ty=1&aty=0&a=&from=6" target="_blank" class="BtnName">客服<i></i></a><a href="http://crm2.qq.com/page/portalpage/wpa.php?key=XzkzODAzMzcyMF8xMTU5OTJfNDAwOTkyNTIyMl8&uin=4009925222&f=1&ty=1&aty=0&a=&from=6" target="_blank" class="what"><p>在线客服</p><p class="kefuTime">9:00-17:30(工作日)</p></a></li>
+            <li class="compute"><a rel="nofollow" href="计算器.html" target="_blank" class="BtnName">计算<i></i></a><a rel="nofollow" href="计算器.html" target="_blank" class="what"><p>在线计算器</p></a></li>
+            <li class="watch"><a rel="nofollow" href="javascript:;" class="BtnName">微信<i></i></a><a rel="nofollow" href="javascript:;" class="what"><div class="dingyue"><p>订阅号</p><img src="images/dingyue.png" alt="看我吧！"></div></a></li>
+            <li class="app">
+            <a rel="nofollow" href="javascript:;" class="BtnName">app下载<i></i></a>
+            <a rel="nofollow" href="javascript:;" class="what"><p>APP下载</p><img src="images/appdownload.png" alt="快拍我！"></a>
+            </li>
+            <li class="kefu" style="background-color: rgb(61, 177, 250);"><a href="https://www.weidai.com.cn/index.html#" class="BtnName" onclick="ysf.open();return false;">七鱼<i></i></a><a href="https://www.weidai.com.cn/index.html#" class="what" onclick="ysf.open();return false;" style="display: none; width: 0px; left: 0px;"><p>在线客服</p><p class="kefuTime">9:00-17:30(工作日)</p></a></li>
+        </ul>
+        <div class="century"><img src="images/daishushidai.png" alt=""></div>
+    </div>
+    <!-- 右侧浮动窗口 end-->
+    
+	<script src="js/public.js"></script>
+	<script src="js/common.js"></script>
+    <script src="js/7830fb1ba03aff3cdbd6e9cc0867b851.js" defer async></script>
+<a class="backTop"><i></i></a>
+
+	<script>
+		new WOW().init();
+	</script>
+</body>
+
+<script type="text/javascript" >
+    /*百分圆圈*/
+    (function () {
+        var animateDiv = $('.percent_small');
+        //var animateDiv = $('.percent_small');
+        animateEle();
+        $(window).scroll(function () { animateEle() });
+        function animateEle() {
+            var playRange = { top: $(window).scrollTop(), bottom: $(window).scrollTop() + $(window).height() };
+            animateDiv.each(function () {
+                if (playRange.top <= $(this).offset().top && playRange.bottom >= $(this).offset().top && !$(this).data('bPlay')) {
+                    $(this).data('bPlay', true);
+                    var nPercent = $(this).parent().find('font').text().replace(/\%/, '');
+                    //var nPercent = $(this).find('div').text().replace(/\%/, '');
+                    $(this).svgCircle({
+                        parent: $(this)[0],
+                        w: 55,
+                        R: 24,
+                        sW: 4,
+                        color: ["#3db1fa", "#3db1fa", "#3db1fa"],
+                        perent: [100, nPercent],
+                        speed: 150,
+                        delay: 400
+                    });
+                }
+            });
+        }
+    })(); 
+</script>
+    
+</html>

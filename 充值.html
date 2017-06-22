@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/jiekuan.css" rel="stylesheet" type="text/css"/>
+    <link href="css/member.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+    
+ <div id="top">
+    <div class="layout">
+        <a href="手机鱼米.html" class="topApp"><i></i>手机鱼米</a>
+        <ul> 
+            <li> <a href="注册.html">注册</a> &nbsp; <a href="登录.html">登录</a> </li>
+            <li class="weixin">
+                <a href="javascript:;" class="aQQ"><i></i>官方微信</a>
+                <div class="weixinShow disNone">
+                    <img src="images/weixin.png" alt="微信扫一扫咨询早知道！">
+                    <div class="text">微信扫一扫<br>咨询早知道！</div>
+                </div>
+            </li>
+            <li><a href="帮助中心.html">帮助中心</a></li>
+            <li><a href="新手引导.html">新手引导</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="header">
+    <div class="layout clearfix">
+        <a href=".html" class="logo"><img src="images/logo.png" alt="鱼米网LOGO"></a>
+        
+        <dl>
+            <dt><a href="我的账户.html"><i class="txI"></i>我的账户
+            <i> </i>
+            </a></dt>
+            <dd> <p><a href="账户主页.html">账户主页</a></p>
+                <p><a href="资产管理.html">资产管理</a></p>
+                <p><a href="投标管理.html">投标管理</a></p>
+                <p><a href="个人资料.html">个人资料</a></p>
+                <p><a href="消息管理.html">消息管理</a></p>
+                <p><a href="邀请奖励.html">邀请奖励</a></p>
+                <i></i>
+            </dd>
+        </dl>
+        <ul id="nav">
+            <li class="curr"><a href="index.html">首页</a></li>
+            <li>
+                <a href="我要投资.html">我要投资<i></i></a>
+                <div class="show">
+                    <p><a href="javascript:">热售标</a></p>
+                    <p><a href="javascript:">新手标</a></p>
+                    <p><a href="javascript:">定时标</a></p>
+                    <p><a href="javascript:">定向标</a></p>
+                    <p><a href="javascript:">转让标</a></p>
+                    <p><a href="javascript:">信用标</a></p>
+                    <i></i>
+                </div>
+            </li>
+            <li><a href="我要借款.html">我要借款</a></li>
+            <li><a href="鱼米问答.html">鱼米问答</a></li>
+            <li>
+               <a href="鱼米简介.html">关于鱼米<i></i></a>
+                <div class="show">
+                    <p><a href="鱼米简介.html">鱼米简介</a></p>
+                    <p><a href="团队介绍.html">团队介绍</a></p>
+                    <p><a href="企业文化.html">企业文化</a></p>
+                    <p><a href="办公环境.html">办公环境</a></p>
+                    <p><a href="员工关怀.html">员工关怀</a></p>
+                    <p><a href="联系我们.html">联系我们</a></p>
+                    <i></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	setTimeout("initBbsUrl()",500);
+})
+
+function initBbsUrl(){
+	var bbs_url=$("#bbs_url").attr("href");
+	var mc=$("#message_count_span").text();
+	$("#bbs_url").attr("href",bbs_url+"?m="+mc);
+}
+</script>
+
+	<!--用户中心-->
+	<div class="height18"></div>
+	<div id="member" class="layout borderGray bgWhite clearfix">
+		<!--用户中心左侧-->
+		
+<!--用户中心左侧-->
+  <div class="memberLeft">
+    <div class="userInfo">
+       <img src="images/tx.png" style="width:80px; height:80px;">
+
+       <p id="mobileLeft">155*****960</p>
+
+       <div class="icon">
+       	   <a href="https://www.weidai.com.cn/ucenter/safety.html" title="实名认证" id="realname" class="a"></a>
+	       <a title="手机认证" href="https://www.weidai.com.cn/ucenter/safety.html" id="ConfigMobile" class="b"></a>
+	       <a href="https://www.weidai.com.cn/ucenter/safety.html" title="银行卡认证" id="bankState" class="cNo"></a>
+	       <a href="https://www.weidai.com.cn/ucenter/safety.html" title="支付密码" id="paypass" class="dNo"></a></div>
+       </div>
+    <div class="userProgress clearfix">
+      <div class="progress" id="percepage" data-width="0"><tt style="width: 50%;"></tt></div>
+      <p>资料完整度：<a href="https://www.weidai.com.cn/ucenter/onlineRechargeHtml#" id="perCent" class="aBlue">50%</a></p>
+    </div>
+   <div class="mNav" id="mNavId">
+      <dl>
+        <dt><a href="我的账户.html">账户主页</a></dt>
+      </dl>
+      <dl class="curr">
+        <dt id="accountmanage" ><a href="资产管理.html">资产管理</a></dt>
+        <dd>
+          <p>
+          <a href="资产管理.html">资金统计</a><span>&gt;</span></p>
+          <p class="active">
+          <a href="充值.html">充值</a><span>&gt;</span></p>
+          <p>
+          <a href="提现.html">提现</a><span>&gt;</span></p>
+          <p>
+          <a href="银行卡.html">银行卡</a><span>&gt;</span></p>
+        </dd>
+      </dl>
+     <dl>
+        <dt><a href="投标管理.html">投标管理</a></dt>
+        <dd>
+          <p>
+          <a href="投标管理.html">投标明细</a><span>&gt;</span></p>
+          <p>
+          <a href="投标设置.html">自动投标</a><span>&gt;</span></p>
+          <p>
+          <a href="收款明细.html">收款明细</a><span>&gt;</span></p>
+          <p>
+          <a href="债权转让.html">债权转让</a><span>&gt;</span></p>
+        </dd>
+      </dl>
+      <dl>
+        <dt><a href="消息管理.html">个人资料</a></dt>
+      </dl>
+      <dl>
+        <dt><a href="消息管理.html">消息管理</a></dt>
+        <dd>
+           <p><a href="消息管理.html">我的消息</a><span>&gt;</span></p>
+           <p><a href="消息设置.html">消息设置</a><span>&gt;</span></p>
+        </dd>
+      </dl>
+      <dl>
+        <dt><a href="邀请奖励.html">邀请奖励</a></dt>
+      </dl>
+    </div>
+    <div class="height18"></div>
+    <div class="userInfo"><img src="images/weima.jpg" alt=""></div>
+    <div class="height18"></div>
+  </div>
+  <!--用户中心左侧 end-->
+ 
+<script type="text/javascript">
+function htrful(ahref){
+	$.ajax({
+		url : "/ucenter/userAjax",
+		type : 'POST',
+		dataType : 'json',
+		success : function(rt) {
+			if(rt.tender.realStatus){
+				var alertHtml=$("#alertAuthenticationIdUl").html();
+		        art.dialog({
+		            id:'authenticationIdUl',
+		            title:'身份认证',
+		            fixed:true,
+		            lock:true,
+		            content: alertHtml,
+		            init:function(){
+		            	verifyAuthenticationul(ahref);//身份认证验证
+		            }
+		        });
+			}else{
+				window.location.href =ahref;
+			}
+		}
+	});
+}
+//身份认证验证
+function verifyAuthenticationul(ahref){
+    $("#id_card_btn_id_ul").bind("click", function() {
+        var realNamedVal = $("#real_name_id_ul").val();
+        var realCardVal=$("#id_card_id_ul").val();
+        var errorId=$("#id_card_error_info_id_ul");
+        errorId.css("display","block");
+      	//认证成功跳转页面
+    	$("#authsuccessul").attr("href",ahref);
+        if(!realNamedVal) {
+            errorId.html("请输入您的真实姓名");
+        }
+        else if(!realCardVal)
+        {
+            errorId.html("请输入您的身份证号码");
+        }
+        else if(!checkIdcard(realCardVal))
+        {
+            errorId.html("您的身份证号码输入不正确");
+        }
+        else if(!Age(realCardVal))
+        {
+            errorId.html(" 身份证号年龄需大于18岁");
+        }
+        else{
+            //验证身份合法性
+            $.ajax({
+                type: "post",
+                url: getRootPath()+"/ucenter/checkIdCardNum",
+                data: {
+                    "userName" : realNamedVal,
+                    "idNumber" : realCardVal
+                },
+                async : false,
+                dataType: "json",
+                beforeSend:function(XMLHttpRequest){
+                    $("#id_card_error_info_id_ul").addClass("disNone");
+                    $("#authenticationSuccessIdUl").addClass("disNone");
+                    $("#authenticationErrorIdUl").addClass("disNone");
+                    $("#loadingIdUl").removeClass("disNone");
+                },
+                success: function(data){
+                    if(data.success){
+                        $.ajax({
+                            url:getRootPath()+'/bid/updateIdCard',
+                            data:{
+                                realName : realNamedVal,
+                                idCardNum : realCardVal
+                            },
+                            type:'post',
+                            cache:false,
+                            dataType:'json',
+                            success:function(data) {
+                                if('1' == data.code){
+                                    $("#id_card_alert_box_id_ul").addClass("disNone");
+                                    $("#authenticationSuccessIdUl").removeClass("disNone");
+                                    $("#authenticationErrorIdUl").addClass("disNone");
+                                    $("#loadingIdUl").addClass("disNone");
+                                } else {
+                                    $("#id_card_alert_box_id_ul").addClass("disNone");
+                                    $("#authenticationSuccessIdUl").addClass("disNone");
+                                    $("#authenticationErrorIdUl").removeClass("disNone");
+                                    $("#loadingIdUl").addClass("disNone");
+                                }
+                            },
+                            error : function() {
+                                $("#error_text_id_ul").html("<p>"+ data.msg+"</p>");
+                                $("#id_card_alert_box_id_ul").addClass("disNone");
+                                $("#authenticationSuccessIdUl").addClass("disNone");
+                                $("#authenticationErrorIdUl").removeClass("disNone");
+                                $("#loadingIdUl").addClass("disNone");
+                            }
+                        });
+                    } else {
+//                         var msgObj = JSON.parse(data.msg);
+//                         if(msgObj.idnumber && msgObj.idnumber!=""){
+//                             $("#error_text_id_ul").html("<p>"+msgObj.idnumber+"</p>");
+//                         }
+//                         if(msgObj.tips && msgObj.tips!=""){
+//                             $("#error_text_id_ul").html("<p>"+msgObj.tips+"</p>");
+//                         }
+//                         $("#id_card_alert_box_id_ul").addClass("disNone");
+//                         $("#authenticationSuccessIdUl").addClass("disNone");
+//                         $("#authenticationErrorIdUl").removeClass("disNone");
+//                         $("#loadingIdUl").addClass("disNone");
+                        
+//                         $("#error_text_id_ul").html("<p>"+"实名认证失败"+"</p>").show();
+                        $("#error_text_id_ul").html("<p>"+"认证失败，实名认证信息有误或今日认证次数超过3次。"+"</p>").show();
+                        $("#id_card_alert_box_id_ul").addClass("disNone");
+                        $("#authenticationSuccessIdUl").addClass("disNone");
+                        $("#authenticationErrorIdUl").removeClass("disNone");
+                        $("#loadingIdUl").addClass("disNone");
+                        return false;
+                    }
+                }
+            });
+
+        }
+    });
+}
+
+function formShow(){
+	$("#id_card_alert_box_id_ul").removeClass("disNone");
+    $("#authenticationSuccessIdUl").addClass("disNone");
+    $("#authenticationErrorIdUl").addClass("disNone");
+    $("#loadingIdUl").addClass("disNone");
+    
+    //兼容
+    $("#id_card_alert_box_id").removeClass("disNone");
+    $("#authenticationSuccessId").addClass("disNone");
+    $("#authenticationErrorId").addClass("disNone");
+    $("#loadingId").addClass("disNone");
+}
+
+$(function(){
+	  $.ajax({
+	      type: "post",
+	      url:"/ucenter/UserInfo",
+	      dataType: "json",
+	      success: function (data) {
+	    	  var info=data.info;
+	    	  var le=info.mobile.length;
+	    	  //显示手机号
+
+	    	  $("#mobileLeft").html(info.mobile.substring(0, 3) + "*****" + info.mobile.substring(le - 3, le));
+
+	    	  //显示完成百分比
+	    	  $("#perCent").html(info.authPre+"%");
+	    	  $("#percepage").find("tt").animate( { width: info.authPre+"%"} , 1000 );
+	    	  // 实名认证状态样式显示
+	    	  if(info.realStatus=="0") {
+	    		  
+	    		 $("#realname").attr("class","a");
+	    	  }
+	    	  if(info.mobileStatus=="0") {
+		    		 $("#ConfigMobile").attr("class","b");
+		      };
+		      if( info.bankAccount=="0") {
+		    		 $("#bankState").attr("class","c");
+		      };
+		      if(   info.paypass=="0") {
+
+		    		 $("#paypass").attr("class","d");
+		      };
+
+	     }
+
+	  });
+});
+</script>
+		<!--用户中心内容-->
+		<div class="memberContent" id="amountCaozuo">
+			<div class="chongzhiTop">
+				<h3 class="cur">账户充值</h3>
+			</div>
+			<div class="topTips">
+				<b class="fontRed">安全保障：</b> 微贷用户资金账户由阳光保险承保，数据安全由阿里云全程保障，稳健安全！
+			</div>
+			<div class="height10"></div>
+ <form id="payForm3" class="payForm" target="_blank" action="https://www.weidai.com.cn/ucenter/recherge" method="post">
+    <ul class="czUl">
+  	 
+
+      <li>
+      	<label class="name">选择支付</label>
+        <div id="bankTitle" class="bankLi">
+                <!-- 第一行yinhang -->
+                <label id="lianlianpay" data-yh="sft3" class="curr"><img src="images/zf1.jpg"><i></i></label>
+                <label id="YeePay" data-yh="sft2" class=""><img src="images/zf2.jpg"><i></i></label>
+                <label id="LiandongPay" data-yh="sft1" class=""><img src="images/zf3.jpg"><i></i></label>
+        </div>
+      </li>
+      <li>
+       <h4 style="display: none;"><span>快捷支付无需网银，50元起充</span>如果充值未能及时成功，请刷新。微贷会不断进步，谢谢您的支持！</h4>
+      	<label class="name">选择银行</label>
+        <div id="bankSelect" class="bankLi">
+            <div id="bank1" class="bankH" style="display: block;">
+                <!-- 第一行yinhang -->
+                <label id="01040000" data-yh="sft3" class=""><img alt="" src="images/1.jpg"><i></i></label>
+                <label id="01030000" data-yh="sft2" class=""><img alt="" src="images/2.jpg"><i></i></label>
+                <label id="01050000" data-yh="sft5" class=""><img alt="" src="images/3.jpg"><i></i></label>
+                <label id="01020000" data-yh="sft1" class=""><img alt="" src="images/4.jpg"><i></i></label>
+                
+                
+                <label id="03010000" data-yh="sft14" class=""><img alt="" src="images/5.jpg"><i></i></label>
+                <label id="03080000" data-yh="sft14" class=""><img alt="" src="images/5.jpg"><i></i></label>
+                <label id="03100000" data-yh="sft14" class=""><img alt="" src="images/5.jpg"><i></i></label>
+                <label id="03060000" data-yh="sft14" class=""><img alt="" src="images/5.jpg"><i></i></label>
+                
+                
+                <label id="03020000" data-yh="sft14" class=""><img alt="" src="images/5.jpg"><i></i></label>
+                <label id="03030000" data-yh="sft14" class=""><img alt="" src="images/5.jpg"><i></i></label>
+                <label id="04012900" data-yh="sft14" class=""><img alt="" src="images/5.jpg"><i></i></label>
+                <label id="03050000" data-yh="sft13" class=""><img alt="" src="images/5.jpg"><i></i></label>
+                
+                <label id="03040000" data-yh="sft14" class=""><img alt="" src="images/5.jpg"><i></i></label>
+                <label id="03070000" data-yh="sft14" class=""><img alt="" src="images/5.jpg"><i></i></label>
+                <label id="01000000" data-yh="sft12" class=""><img alt="" src="images/5.jpg"><i></i></label>
+                <label id="04083320" data-yh="sft7"><img alt="" src="images/5.jpg"><i></i></label>  
+            </div>
+            <div id="bank2" class="bankH disNone" style="display: none;">
+                <!-- 第一行yinhang -->
+                <label id="BOC-NET-B2C" data-yh="sft3" class=""><img alt="" src="images/1(1).jpg"><i></i></label>
+                <label id="ABC-NET-B2C" data-yh="sft2" class=""><img alt="" src="images/2(1).jpg"><i></i></label>
+                <label id="CCB-NET-B2C" data-yh="sft5" class=""><img alt="" src="images/3.jpg"><i></i></label>
+                <label id="ICBC-NET-B2C" data-yh="sft1" class=""><img alt="" src="images/4(1).jpg"><i></i></label>
+                <label id="CMBCHINA-NET-B2C" data-yh="sft14" class=""><img alt="" src="images/6.jpg"><i></i></label>
+                <label id="CMBC-NET-B2C" data-yh="sft13" class=""><img alt="" src="images/12(1).jpg"><i></i></label>
+                <label id="PINGANBANK-NET-B2C" data-yh="sft12" class=""><img alt="" src="images/14(1).jpg"><i></i></label>
+                <label id="POST-NET-B2C" data-yh="sft7"><img alt="" src="images/15(1).jpg"><i></i></label>   
+            </div>
+            
+            <div id="bank3" class="bankH disNone liandong" style="display: none;">
+                <!-- 第一行yinhang -->
+                <label id="B001" data-yh="sft3" class="" title=""><img alt="" src="images/1(1).jpg"><i></i></label>
+                <label id="B002" data-yh="sft2" class="" title="中国农业银行"><img alt=""  src="images/1(1).jpg"><i></i></label>
+                <label id="B004" data-yh="sft5" class="" title="中国建设银行"><img alt=""  src="images/1(1).jpg"><i></i></label>
+                <label id="B003" data-yh="sft1" class="" title="中国工商银行"><img alt="" src="images/1(1).jpg"><i></i></label>
+                
+                <label id="B009" data-yh="sft14" class="" title="中信银行"><img alt="" src="images/1(1).jpg"><i></i></label>
+                <label id="B010" data-yh="sft14" class="" title="中国光大银行"><img alt="" src="images/1(1).jpg"><i></i></label>
+                <label id="B041" data-yh="sft12" class="" title="平安银行"><img alt="" src="images/1(1).jpg"><i></i></label>
+                <label id="B014" data-yh="sft14" class="" title="兴业银行"><img alt="" src="images/1(1).jpg"><i></i></label>
+                
+                <label id="B015" data-yh="sft14" class="" title="浦发银行"><img alt="" src="images/1(1).jpg"><i></i></label>
+                <label id="B011" data-yh="sft13" class="" title="中国民生银行"><img alt="" src="images/1(1).jpg"><i></i></label>   
+            </div>
+             <div class="bankForm" style="display: none;">
+                <ul>
+                  <li><label>付款银行</label><span class="bankName">招商银行</span><span class="changeBank">更换银行</span></li>
+                  <li style="position:relative;">
+	                  	<label>银行卡号</label>
+	                  	<input type="text" name="bankCodeNumber" id="bankCodeNumber" maxlength="20" onkeyup="this.value=this.value.replace(/\D/g,&#39;&#39;)" onafterpaste="this.value=this.value.replace(/\D/g,&#39;&#39;)">
+	                  	<span class="codeErrorTip" id="bt"></span>
+	                  	</li>
+                  <li><label>姓名</label><span class="kaihuRen">金*</span></li>
+                  <li><label>身份证</label><span class="idCard">340521198909301029</span></li>
+                  <li>	
+                  	 <label>预留号码</label>
+                    <input type="text" placeholder="银行卡预留手机号码" maxlength="11" class="phoneNum" name="phoneNum" id="phoneNum" onkeyup="this.value=this.value.replace(/\D/g,&#39;&#39;)" onafterpaste="this.value=this.value.replace(/\D/g,&#39;&#39;)">              
+                    <span class="codeErrorTip" id="tp"></span> 
+                  	
+                  </li>
+                  <li style="margin-top: 10px">
+                  	  <label>手机验证码</label>
+                  	  <input type="text" placeholder="短信验证码" maxlength="6" class="messageCode" name="mobileCode" onkeyup="this.value=this.value.replace(/\D/g,&#39;&#39;)" onafterpaste="this.value=this.value.replace(/\D/g,&#39;&#39;)" id="mobileCode" onblur="checkCode()">
+                  	  <input type="button" class="noBut" id="getCode" value="获取验证码">
+                  	  <span class="codeErrorTip" id="ct"></span>
+                  </li>
+                </ul>
+            </div>
+            <div id="bank4" class="bankH disNone notLD" style="display: none;">
+              <div class="text"><i class="lightbom"></i>
+              <p>快捷支付目前只提供先充值后购买的流程。只能在充值中使用！<br>请先去
+              <a href="javascript:" class="recharge" onclick="checkRecharge()">充值</a>，
+              或者使用普通网银支付！<a href="javascript:" class="recharge" onclick="checkRecharge()">充值</a>现在就去充值》</p></div>
+            </div>
+            
+        </div>
+      </li>
+
+
+
+      <li class="mInput">
+      	<label class="name">充值金额</label>
+      	<input type="text" id="amount" name="amount" class="inputText" onblur="formValid.amountValid(&#39;#amount&#39;,&#39;#amountError&#39;,&#39;#bankThirdType&#39;)">
+        <span>元</span>
+        <span id="amountError" class="codeErrorTip"></span>
+      </li>
+      <li class="butLi">
+      	<input type="submit" class="inputBut" id="submit" value="确定充值">
+      	<label class="error" style="display:none;" id="backCodeError">请选择银行</label>
+      </li>
+    </ul>
+    	<input type="hidden" id="bankCode" name="bankCode" value="">
+    	<input type="hidden" id="bankThirdType" name="bankThirdType" value="lianlianpay">
+    	<input type="hidden" id="checkCodeRecharge" name="checkCodeRecharge" value="false">
+    	<input type="hidden" name="token" value="${token}">
+    </form>
+    <script type="text/javascript" src="js/recharge.js"></script> <!---银行卡切换--->
+    <script>
+    var fromName="#payForm3";
+	$("#payForm3").submit(function(){
+		var  bankThirdType=$("#bankThirdType").val();
+		if(bankThirdType=='LiandongPay'){
+			var a=formValid.bankValid("#bankCode","#backCodeError");//银行
+			var b=formValid.bankCodeValid("#bankCodeNumber","#bt");//银行卡号
+			var c=formValid.mobileValid("#phoneNum","#tp");//手机号码
+			var d=formValid.mobileCodeValid("#mobileCode","#ct");//验证码
+			var e=formValid.amountValid("#amount","#amountError","#bankThirdType");//充值金额
+			var checkCodeRecharge=$("#checkCodeRecharge").val();
+			if(a&& b&& c&& d&& e && checkCodeRecharge ){
+				var alertHtml=$("#alertPaymentId").html();
+			    art.dialog({
+			        title:'支付提示',
+			        fixed:true,
+			        lock:true,
+			        content: alertHtml
+			    });
+			}else{
+				return false;
+			}
+		}else{
+			var backCode=formValid.bankValid("#bankCode","#backCodeError");//银行
+			var amount=formValid.amountValid("#amount","#amountError","#bankThirdType");//充值金额
+			if(backCode && amount){
+				var alertHtml=$("#alertPaymentId").html();
+			    art.dialog({
+			        title:'支付提示',
+			        fixed:true,
+			        lock:true,
+			        content: alertHtml
+			    });
+			}else{
+				return false;
+			}
+			mvclick();
+		} 
+})
+
+var _mvq = window._mvq || [];window._mvq = _mvq;
+    _mvq.push(['$setAccount', 'm-196950-0']);
+
+    function mvclick() {
+	    var d = new Date();
+	    var id = d.getYear().toString() + (d.getMonth() + 1).toString() + d.getDate().toString() + d.getHours().toString() + d.getMinutes().toString() + d.getSeconds().toString();
+	    id += "." + Math.random();
+	    _mvq.push(['custom', 'jzqu2', /*充值ID*/ id, Math.random()]);
+	    _mvq.push(['$logConversion']);
+	}
+
+
+<!--以上是充值的转化跟踪代码，请将转化明细信息回传到相应字段--> 
+
+//联动充值获取验证码
+$("#getCode").click(function () {
+	var mobile = $("#phoneNum").val(),errorCode = $("#mobileCode").val();
+	if(!$("#getCode").hasClass("noBut")){
+		if(formValid.mobileValid("#phoneNum","#tp"))
+		{
+			if(mobile){
+				$.ajax({
+					type : 'POST',
+					url :'/ucenter/LDRechargeCode',
+					data : {
+						mobiles : mobile
+					}, 
+					success : function(data) {
+						if(!data.success){
+							if(null!=data.msg){
+								$("#ct").addClass("nnotOk").removeClass("ok");
+						        $("#ct").text(data.msg).show();
+							}
+						}else{
+							$("#ct").addClass("ok").removeClass("nnotOk");
+					        $("#ct").text(data.msg).show();
+					        $("#checkCodeRecharge").val(true);
+							downTime();
+						}
+					} 
+				});
+			}
+			
+		}
+	}
+	
+});
+
+function checkCode(){
+	var mobileCode=$("#mobileCode").val(),mobile=$("#phoneNum").val();
+	if(mobileCode && mobileCode.length==6){
+		$.ajax({
+			type : 'POST',
+			url :'/ucenter/checkRecharge',
+			data : {
+				mobile : mobile,
+				mobileCode:mobileCode
+			}, 
+			success : function(data) {
+				if(!data.success){
+					$("#ct").addClass("nnotOk").removeClass("ok");
+			        $("#ct").text(data.msg);
+				}else{
+					$("#ct").addClass("ok").removeClass("nnotOk");
+			        $("#ct").text("").show();
+				}
+			}
+		});
+	}
+}
+
+
+function checkRecharge(){
+	$.ajax({
+		type:'POST',
+		url:"/bid/checkUserRealStatus?uid=607399",
+		dataType:'json',
+		success:function(data1){
+			if(data1){
+				window.location.href="/ucenter/onlineRechargeHtml"; 
+			} else {
+				showDialogBox();
+			}
+		}
+	}); 
+}
+	</script>
+
+
+</div>
+<!--用户中心内容 end-->
+	</div>
+
+	<!--支付弹出框-->
+	<div id="alertPaymentId" class="disNone">
+		<div class="alertPaymentClass">
+			<div class="tips">请您在新打开的第三方支付页面上完成前请不要关闭此窗口</div>
+			<div class="height18"></div>
+			<img class="rechargeNoviciate" src="./在线充值-用户中心_微贷网官网专业的理财平台_files/rechargeNoviciate.png" alt="本次投资后您将获得新手奖励！">
+			<div class="height10"></div>
+			<p class="disnone">完成充值后请根据您的情况点击下面的按钮：</p>
+			<div class="alertBnt">
+				<a href="https://www.weidai.com.cn/sys/help.html" class="noBnt">充值遇到问题</a> 
+				<a href="https://www.weidai.com.cn/ucenter/RechargeRecord" class="okBnt">已经完成充值</a>
+			</div>
+		</div>
+	</div>
+	<!--支付弹出框 end-->
+	
+	<!--认证弹出框-->
+<div id="alertAuthenticationId" class="disNone">
+    <div class="alertAuthenticationClass">
+		<div id="id_card_alert_box_id">
+			<div class="alertTips">
+				<i></i>
+				微贷网使用最严格的安全体系，每位用户必须实名认证！<br>只能用您本人的银行卡购买和提现，不能对外转账。
+			</div>
+			<ul class="alertFormUl" style="margin-top:60px;">
+				<li class="error"><p id="id_card_error_info_id"></p></li>
+				<li>
+					<label class="alertName">真实姓名</label>
+					<input type="text" class="alertInputText" id="real_name_id">
+				</li>
+				<li>
+					<label class="alertName">身份证号</label>
+					<input type="text" class="alertInputText" id="id_card_id">
+				</li>
+				<li class="but">
+					<button class="buttonClass" type="button" id="id_card_btn_id">立即认证</button>
+				</li>
+				<li class="center"><p><img src="./在线充值-用户中心_微贷网官网专业的理财平台_files/gongan(2).png" alt="公安部身份认证系统">公安部身份认证系统</p></li>
+			</ul>
+        </div>
+        <div id="loadingId" class="alertLoading disNone"><img src="./在线充值-用户中心_微贷网官网专业的理财平台_files/loading_more(1).gif" alt=""></div>
+        <div id="authenticationSuccessId" class="disNone">
+            <ul class="alertFormUl">
+                <li class="tipsLi"><i class="successIcon"></i><h3>恭喜您，认证通过</h3></li>
+                <li class="but">
+                    <a href="https://www.weidai.com.cn/bid/tenderList" class="aLink">立即投资</a>
+                </li>
+                <li class="center"><p><img src="./在线充值-用户中心_微贷网官网专业的理财平台_files/gongan.png" alt="公安部身份认证系统">公安部身份认证系统</p></li>
+            </ul>
+        </div>
+        <div id="authenticationErrorId" class="disNone">
+            <ul class="alertFormUl">
+                <li class="tipsLi"><i class="errorIcon"></i><h3 id="error_text_id" class="errorH">对不起，认证失败</h3></li>
+                <li class="but">
+                    <a href="javascript:;" onclick="formShow()" class="aLink">重新认证</a>
+                </li>
+                <li class="center"><p><img src="./在线充值-用户中心_微贷网官网专业的理财平台_files/gongan(3).png" alt="公安部身份认证系统">公安部身份认证系统</p></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--认证弹出框 end-->
+
+<div class="height18"></div>
+<div id="footer">
+    <div class="layout">
+        <div class="footerDl">
+            <dl>
+                <dt><a href="我要投资.html">我要投资</a></dt>
+                <dd><a href="新手标的.html">新手标的</a></dd>
+                <dd><a href="自动投标.html">自动投标</a></dd>
+                <dd><a href="常见问题.html" target="_blank">常见问题</a></dd>
+                <dd><a href="收费标准.html" target="_blank">收费标准</a></dd>
+                <dd><a href="债权转让规则.html" target="_blank">债权转让规则</a></dd>
+            </dl>
+            <dl>
+                <dt>安全保障</dt>
+                <dd><a href="安全准备金.html" target="_blank">安全准备金</a></dd>
+                <dd><a href="阳光保险.html" target="_blank">阳光保险</a></dd>
+                <dd><a href="实体经营.html" target="_blank">实体经营</a></dd>
+                <dd><a href="https://www.weidai.com.cn/sys/special1.html" target="_blank">阿里金融云</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="关于鱼米.html" target="_blank">关于鱼米</a></dt>
+                <dd><a href="网站地图.html">网站地图</a></dd>
+                <dd><a href="团队介绍.html" target="_blank">团队介绍</a></dd>
+                <dd><a href="企业文化.html" target="_blank">企业文化</a></dd>
+                <dd><a href="联系我们.html" target="_blank">联系我们</a></dd>
+            </dl>
+        </div>
+        <ul class="telephoneUl">
+            <li>客服专线：<em>400-992-5222</em></li>
+            <li>客服服务时间：9:00-21:00</li>
+            <li><span>关注我们：</span><a href="javascript:;" class="weixin"><img src="images/weixin(1).png" alt=""/></a><a href="http://weibo.com/weidaiwang" rel="nofollow" target="_blank" class="sina"></a></li>
+        </ul>
+        <div class="appDownload"><a href="https://www.weidai.com.cn/sys/special5.html" rel="nofollow" target="_blank"><img src="images/footerImg1.png" alt=""></a></div>
+        <div class="footerText">
+            <p>? 2012-2015 鱼米网 鱼米（杭州）金融信息服务有限公司 版权所有 浙ICP备15029561号-1 </p>
+            <a href="http://www.verisign.com/" rel="nofollow" target="_blank"><img src="images/symantec.png" alt="verisign"></a>
+            <a href="http://t.knet.cn/index_new.jsp" rel="nofollow" target="_blank"><img src="images/kexin.png" alt="可信网站"></a>
+            <a href="http://www.mps.gov.cn/n16/index.html?_v=1442896797517" rel="nofollow" target="_blank"><img src="images/gongan.png" alt="公安"></a>
+            <a href="http://www.ancun.com/" rel="nofollow" target="_blank"><img src="images/anchu.png" alt="安存"></a>
+        </div>
+    </div>
+</div>
+<div class="shade" style="display: none; width: 1920px; height: 1080px;"></div>
+<div id="enger" style="display: none;">
+      <div class="qidongBG">
+        <i class="closeBtn"></i>
+        <div class="welcome">欢迎来到鱼米网，我们&nbsp;<em>5</em>&nbsp;年累计为用户赚钱</div>
+        <span class="money"><em>426918802</em>元</span>
+        <span class="engerBtn">点击进入鱼米 &gt;&gt;</span>
+      </div>
+</div>
+
+
+<!-- 右侧浮动窗口 start-->
+    <div class="floatBtn">
+        <ul>
+            <li class="qq">
+            <a href="http://crm2.qq.com/page/portalpage/wpa.php?key=XzkzODAzMzcyMF8xMTU5OTJfNDAwOTkyNTIyMl8&uin=4009925222&f=1&ty=1&aty=0&a=&from=6" target="_blank" class="BtnName">客服<i></i></a>
+            <a href="http://crm2.qq.com/page/portalpage/wpa.php?key=XzkzODAzMzcyMF8xMTU5OTJfNDAwOTkyNTIyMl8&uin=4009925222&f=1&ty=1&aty=0&a=&from=6" target="_blank" class="what">
+              <p>在线客服</p>
+              <p class="kefuTime">9:00-17:30(工作日)</p>
+            </a>
+            </li>
+            <li class="compute">
+              <a rel="nofollow" href="计算器.html" target="_blank" class="BtnName">
+               计算<i></i>
+              </a>
+              <a rel="nofollow" href="计算器.html" target="_blank" class="what">
+               <p>在线计算器</p>
+              </a>
+            </li>
+            <li class="watch">
+            <a rel="nofollow" href="javascript:;" class="BtnName">微信<i></i></a>
+            <a rel="nofollow" href="javascript:;" class="what">
+              <div class="dingyue">
+                <p>订阅号</p>
+                <img src="images/dingyue.png" alt="看我吧！">
+              </div>
+            </a>
+            </li>
+            <li class="app">
+              <a rel="nofollow" href="javascript:;" class="BtnName">
+                app下载<i></i>
+              </a>
+              <a rel="nofollow" href="javascript:;" class="what">
+                <p>APP下载</p>
+                <img src="images/appdownload.png" alt="快拍我！">
+              </a>
+            </li>
+            <li class="kefu" style="background-color: rgb(61, 177, 250);">
+             <a href="https://www.weidai.com.cn/index.html#" class="BtnName" onclick="ysf.open();return false;">
+              七鱼<i></i>
+             </a>
+             <a href="https://www.weidai.com.cn/index.html#" class="what" onclick="ysf.open();return false;" style="display: none; width: 0px; left: 0px;">
+             <p>在线客服</p>
+             <p class="kefuTime">9:00-17:30(工作日)</p>
+             </a>
+            </li>
+        </ul>
+        <div class="century"><img src="images/daishushidai.png" alt=""></div>
+    </div>
+    <!-- 右侧浮动窗口 end-->
+    
+  <script src="js/public.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/7830fb1ba03aff3cdbd6e9cc0867b851.js" defer async></script>
+<a class="backTop"><i></i></a></body></html>

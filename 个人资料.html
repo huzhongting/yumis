@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/zbxq.css" rel="stylesheet" type="text/css">
+    <link href="css/WdatePicker.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script>
+    $(function() {
+		//右边手风琴效果
+       $("#safety form").each(function(i){
+            $("#safety form")[i].reset();
+        })
+        $("#safety .safetyDl dl").hover(function () {
+            $(this).addClass("hover");
+        }, function () {
+            $(this).removeClass("hover");
+        });
+        $("#safety .safetyDl dl dt").click(function () {
+            var dlClass = $(this).parents("dl");
+            $("#safety .safetyDl").find("dd").hide();
+            if (!dlClass.hasClass("curr")) {
+                $("#safety .safetyDl").find("dl").removeClass("curr");
+                dlClass.addClass("curr");
+                dlClass.find("dd").slideToggle("slow");
+            }
+            else {
+                dlClass.find("dd").hide(500);
+                dlClass.removeClass("curr");
+            }
+                                });
+    });
+    </script>
+</head>   
+   
+<body>    
+<div id="top">
+    <div class="layout">
+        <a href="手机鱼米.html" class="topApp"><i></i>手机鱼米</a>
+        <ul> 
+            <li> <a href="注册.html">注册</a> &nbsp; <a href="登录.html">登录</a> </li>
+            <li class="weixin">
+                <a href="javascript:;" class="aQQ"><i></i>官方微信</a>
+                <div class="weixinShow disNone">
+                    <img src="images/weixin.png" alt="微信扫一扫咨询早知道！">
+                    <div class="text">微信扫一扫<br>咨询早知道！</div>
+                </div>
+            </li>
+            <li><a href="帮助中心.html">帮助中心</a></li>
+            <li><a href="新手引导.html">新手引导</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="header">
+    <div class="layout clearfix">
+        <a href=".html" class="logo"><img src="images/logo.png" alt="鱼米网LOGO"></a>
+        
+        <dl>
+            <dt><a href="我的账户.html"><i class="txI"></i>我的账户
+            <i> </i>
+            </a></dt>
+            <dd> <p><a href="账户主页.html">账户主页</a></p>
+                <p><a href="资产管理.html">资产管理</a></p>
+                <p><a href="投标管理.html">投标管理</a></p>
+                <p><a href="个人资料.html">个人资料</a></p>
+                <p><a href="消息管理.html">消息管理</a></p>
+                <p><a href="邀请奖励.html">邀请奖励</a></p>
+                <i></i>
+            </dd>
+        </dl>
+        <ul id="nav">
+            <li class="curr"><a href="index.html">首页</a></li>
+            <li>
+                <a href="我要投资.html">我要投资<i></i></a>
+                <div class="show">
+                    <p><a href="javascript:">热售标</a></p>
+                    <p><a href="javascript:">新手标</a></p>
+                    <p><a href="javascript:">定时标</a></p>
+                    <p><a href="javascript:">定向标</a></p>
+                    <p><a href="javascript:">转让标</a></p>
+                    <p><a href="javascript:">信用标</a></p>
+                    <i></i>
+                </div>
+            </li>
+            <li><a href="我要借款.html">我要借款</a></li>
+            <li><a href="鱼米问答.html">鱼米问答</a></li>
+            <li>
+               <a href="鱼米简介.html">关于鱼米<i></i></a>
+                <div class="show">
+                    <p><a href="鱼米简介.html">鱼米简介</a></p>
+                    <p><a href="团队介绍.html">团队介绍</a></p>
+                    <p><a href="企业文化.html">企业文化</a></p>
+                    <p><a href="办公环境.html">办公环境</a></p>
+                    <p><a href="员工关怀.html">员工关怀</a></p>
+                    <p><a href="联系我们.html">联系我们</a></p>
+                    <i></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--用户中心-->
+<div class="height18"></div>
+<div id="member" class="layout borderGray bgWhite clearfix">
+    <!--用户中心左侧-->
+    
+<!--用户中心左侧-->
+  <div class="memberLeft">
+    <div class="userInfo">
+       <img src="images/tx.png" style="width:80px; height:80px;">
+
+       <p id="mobileLeft">155*****960</p>
+
+       <div class="icon">
+       	   <a href="#" title="实名认证" id="realname" class="a"></a>
+	       <a title="手机认证" href="#" id="ConfigMobile" class="b"></a>
+	       <a href="#" title="银行卡认证" id="bankState" class="cNo"></a>
+	       <a href="#" title="支付密码" id="paypass" class="dNo"></a></div>
+       </div>
+    <div class="userProgress clearfix">
+      <div class="progress" id="percepage" data-width="0"><tt style="width: 50%;"></tt></div>
+      <p>资料完整度：<a href="https://www.weidai.com.cn/ucenter/safety.html#" id="perCent" class="aBlue">50%</a></p>
+    </div>
+    <div class="mNav" id="mNavId">
+      <dl>
+        <dt><a href="我的账户.html">账户主页</a></dt>
+      </dl>
+      <dl>
+        <dt id="accountmanage" ><a href="资产管理.html">资产管理</a></dt>
+        <dd>
+          <p>
+          <a href="资产管理.html">资金统计</a><span>&gt;</span></p>
+          <p>
+          <a href="充值.html">充值</a><span>&gt;</span></p>
+          <p>
+          <a href="提现.html">提现</a><span>&gt;</span></p>
+          <p>
+          <a href="银行卡.html">银行卡</a><span>&gt;</span></p>
+        </dd>
+      </dl>
+     <dl>
+        <dt><a href="投标管理.html">投标管理</a></dt>
+        <dd>
+          <p>
+          <a href="投标管理.html">投标明细</a><span>&gt;</span></p>
+          <p>
+          <a href="投标设置.html">自动投标</a><span>&gt;</span></p>
+          <p>
+          <a href="收款明细.html">收款明细</a><span>&gt;</span></p>
+          <p>
+          <a href="债权转让.html">债权转让</a><span>&gt;</span></p>
+        </dd>
+      </dl>
+      <dl class="curr">
+        <dt class="active"><a href="消息管理.html">个人资料</a></dt>
+      </dl>
+      <dl>
+        <dt><a href="消息管理.html">消息管理</a></dt>
+        <dd>
+           <p><a href="消息管理.html">我的消息</a><span>&gt;</span></p>
+           <p><a href="消息设置.html">消息设置</a><span>&gt;</span></p>
+        </dd>
+      </dl>
+      <dl>
+        <dt><a href="邀请奖励.html">邀请奖励</a></dt>
+      </dl>
+    </div>
+    <div class="height18"></div>
+    <div class="userInfo"><img src="images/weima.jpg" alt=""></div>
+    <div class="height18"></div>
+  </div>
+  <!--用户中心左侧 end-->
+ <!--认证弹出框-->
+<div id="alertAuthenticationIdUl" class="disNone">
+    <div class="alertAuthenticationClass">
+		<div id="id_card_alert_box_id_ul">
+			<div class="alertTips">
+				<i></i>
+				鱼米网使用最严格的安全体系，每位用户必须实名认证！<br>只能用您本人的银行卡购买和提现，不能对外转账。
+			</div>
+			<ul class="alertFormUl" style="margin-top:60px;">
+				<li class="error"><p id="id_card_error_info_id_ul"></p></li>
+				<li>
+					<label class="alertName">真实姓名</label>
+					<input type="text" class="alertInputText" id="real_name_id_ul">
+				</li>
+				<li>
+					<label class="alertName">身份证号</label>
+					<input type="text" class="alertInputText" id="id_card_id_ul">
+				</li>
+				<li class="but">
+					<button class="buttonClass" type="button" id="id_card_btn_id_ul">立即认证</button>
+				</li>
+				<li class="center"><p><img src="./个人资料-用户中心_鱼米网官网专业的理财平台_files/gongan.png" alt="公安部身份认证系统">公安部身份认证系统</p></li>
+			</ul>
+        </div>
+        <div id="loadingIdUl" class="alertLoading disNone"><img src="./个人资料-用户中心_鱼米网官网专业的理财平台_files/loading_more.gif" alt=""></div>
+        <div id="authenticationSuccessIdUl" class="disNone">
+            <ul class="alertFormUl">
+                <li class="tipsLi"><i class="successIcon"></i><h3>恭喜您，认证通过</h3></li>
+                <li class="but">
+                    <a href="" class="aLink" id="authsuccessul">认证成功</a>
+                </li>
+                <li class="center"><p><img src="./个人资料-用户中心_鱼米网官网专业的理财平台_files/gongan.png" alt="公安部身份认证系统">公安部身份认证系统</p></li>
+            </ul>
+        </div>
+        <div id="authenticationErrorIdUl" class="disNone">
+            <ul class="alertFormUl">
+                <li class="tipsLi"><i class="errorIcon"></i><h3 id="error_text_id_ul" class="errorH">对不起，认证失败</h3></li>
+                <li class="but">
+                    <a href="javascript:;" onclick="formShow()" class="aLink">重新认证</a>
+                </li>
+                <li class="center"><p><img src="./个人资料-用户中心_鱼米网官网专业的理财平台_files/gongan(1).png" alt="公安部身份认证系统">公安部身份认证系统</p></li>
+            </ul>
+        </div>
+    </div>
+</div>
+  <!--用户中心左侧 end-->
+    <!--用户中心内容-->
+    <div class="memberContent" id="safety">
+        <div class="memberTitle"><h3>个人资料</h3></div>
+        <div class="height10"></div>
+        <div class="safetyDl">
+            <dl class="clearfix">
+                <dt>
+                    <i class="icon2"></i>
+                <div class="text">
+                    <h3>登录密码</h3>
+                    <p>登录鱼米网时需要输入的密码</p>
+                </div>
+                <div class="bnt"><span>修改</span></div>
+                </dt>
+                <dd style="display: none;">
+                    <div class="formClass">
+                        <form id="updetaForm" action="https://www.weidai.com.cn/ucenter/updatePassword.html" method="post" novalidate>
+                            <ul>
+                                <li>
+                                    <label class="inputName">旧登录密码：</label>
+                                    <input type="password" class="inputText" name="password" id="password" placeholder="请输入您现在的登录密码">
+                                    <label class="error" for="password" id="password_error" style="display:none;"></label>
+                                </li>
+                                <li>
+                                    <label class="inputName">设置新的密码：</label>
+                                    <input type="password" class="inputText" name="password1" id="password1" placeholder="请输入6-20个英文字母或数字">
+                                    <label class="error" for="password1" id="password1_error" style="display:none;"></label>
+                                </li>
+                                <li>
+                                    <label class="inputName">确认新的密码：</label>
+                                    <input type="password" class="inputText" name="password2" id="password2">
+                                    <label class="error" for="password2" id="password2_error" style="display:none;"></label>
+                                </li>
+                                <li><input type="submit" class="inputBut showL" value="确定修改"></li>
+                            </ul>
+                        </form>
+                        <script>
+                            $("#updetaForm").validate({
+                                rules: {
+                                    password:
+                                    {
+                                        required:true
+                                    },
+                                    password1:{
+                                        required:true,
+                                        chrnum:true
+                                    },
+                                    password2:{
+                                        required:true,
+                                        equalTo:"#password1"
+                                    }
+                                },
+                                
+                                messages: {
+                                    password: {
+                                        required:"请输入您现在的登录密码"
+                                    },
+                                    password1: {
+                                        required:"请输入6-20个英文字母或数字"
+                                    },
+                                    password2:{
+                                        required:"请输入与上面一致的密码",
+                                        equalTo:"两次输入密码不一致"
+                                    }
+                                },
+                                submitHandler:function(form) {
+                                    $.ajax({
+                                        type: "post",
+                                        url: "/ucenter/checkPassword",
+                                        data: {password:$("#password").val()},
+                                        async : false,
+                                        dataType: "json",
+                                        success: function(data){
+                                            if(data.success){
+                                                form.submit();
+                                            }else{
+                                                $("#password_error").show().html(data.msg);
+                                                return false;
+                                            }
+                                        }
+                                    });
+                                }
+
+                            })
+                        </script>
+                    </div>
+                </dd>
+            </dl>
+                       <dl class="clearfix">
+                <dt>
+                    <i class="icon5"></i>
+                <div class="text">
+                    <h3>支付密码</h3>
+                    <span>未设置</span>
+                    <p>在鱼米网进行投资时需要输入的密码</p>
+                </div>
+                <div class="bnt"><span>设置</span></div>
+                </dt>
+                <dd style="display: none;">
+                    <div class="formClass">
+                        <form id="paymentForm" action="https://www.weidai.com.cn/ucenter/updateDefaultPaypass.html" method="post" novalidate>
+                            <ul>
+                                <li style="padding:0px;"><label class="tips" style="margin-left:160px">请设置6位数字密码，并确保交易密码设置与登录密码不同</label></li>
+                                <li>
+                                    <label class="inputName">设置支付密码：</label>
+                                    <input type="password" class="inputText" name="paymentpassword1" id="paymentpassword1" placeholder="请输入6位数字">
+                                    <label class="error" for="paymentpassword1" id="paymentpassword1_error" style="display:none;"></label>
+                                </li>
+                                <li>
+                                    <label class="inputName">确认支付密码：</label>
+                                    <input type="password" class="inputText" name="paymentpassword2" id="paymentpassword2">
+                                    <label class="error" for="paymentpassword2" id="paymentpassword2_error" style="display:none;"></label>
+                                </li>
+                                <li><input type="submit" class="inputBut showL" value="确定修改"></li>
+                            </ul>
+                        </form>
+                        <script>
+                            $("#paymentForm").validate({
+                                rules: {
+                                    paymentpassword1:{
+                                        required:true,
+                                        chrnum6:true
+                                    },
+                                    paymentpassword2:{
+                                        required:true,
+                                        equalTo:"#paymentpassword1"
+                                    }
+                                },
+                                messages: {
+                                    paymentpassword1: {
+                                        required:"请输入6位数字密码"
+                                    },
+                                    paymentpassword2:{
+                                        required:"请输入与上面一致的密码",
+                                        equalTo:"两次输入密码不一致"
+                                    }
+                                },
+                                submitHandler:function(form) {
+                                    $.ajax({
+                                        type: "post",
+                                        url: "/ucenter/checkPayPassword",
+                                        data: {
+                                            oldPassword:"",
+                                            newPassword:$("#paymentpassword1").val()
+                                        },
+                                        async : false,
+                                        dataType: "json",
+                                        success: function(data){
+                                            if(data.success){
+                                                form.submit();
+                                            }else{
+                                                var msgObj = JSON.parse(data.msg);
+                                                if(msgObj.newPassword && msgObj.newPassword!=""){
+                                                    $("#paymentpassword1_error").show().html(msgObj.newPassword);
+                                                }
+                                                return false;
+                                            }
+                                        }
+                                    });
+                                }
+                            })
+                        </script>
+                    </div>
+                </dd>
+            </dl>
+                                  <dl class="clearfix">
+                   <dt>
+                       <i></i>
+                   <div class="text">
+                       <h3>实名认证 <em class="fontBlue">金*</em></h3>
+                       <p>您的身份已认证(<em class="fontBlue">111111111</em>)</p>
+                   </div>
+                   <div class="bnt"><span>修改</span></div>
+                   </dt>
+                   <dd style="display: none;">
+                       <div class="mailContent">
+                           <p>真实姓名和身份证号修改将牵扯到您的账户资金安全
+                               <br>如确认修改，请联系客服 (<em class="fontRed">客服时间：周一至周五 9:00-21:00，双休日 9:00-21:00</em>)
+                               <br>
+                               客服热线：400-992-5222
+                               <br>
+                               在线客服：<a href="http://crm2.qq.com/page/portalpage/wpa.php?key=XzkzODAzMzcyMF8xMTU5OTJfNDAwOTkyNTIyMl8&amp;uin=4009925222&amp;f=1&amp;ty=1&amp;aty=0&amp;a=&amp;from=6" target="_blank" class="aBlue">点击在线客服</a></p>
+                       </div>
+                   </dd>
+               </dl>
+                                  <dl class="clearfix">
+                <dt>
+                    <i class="icon1"></i>
+                <div class="text">
+                    <h3>手机号码绑定 <em class="fontBlue">155****6960</em></h3>
+                    <p>绑定手机，账户资金变动实时通知</p>
+                </div>
+                <div class="bnt"><span>修改</span></div>
+                </dt>
+                <dd style="display: none;">
+                    <div class="mailContent">
+                        <p>手机号码将牵扯到您的账户资金安全
+                            <br>如确认修改，请联系客服 (<em class="fontRed">客服时间：周一至周五 9:00-21:00，双休日 9:00-21:00</em>)
+                            <br>
+                            客服热线：400-992-5222
+                            <br>
+                            在线客服：<a href="http://crm2.qq.com/page/portalpage/wpa.php?key=XzkzODAzMzcyMF8xMTU5OTJfNDAwOTkyNTIyMl8&amp;uin=4009925222&amp;f=1&amp;ty=1&amp;aty=0&amp;a=&amp;from=6" target="_blank" class="aBlue">点击在线客服</a></p>
+                    </div>
+                </dd>
+            </dl>
+                                  <dl class="clearfix hover">
+                <dt>
+                    <i class="icon3"></i>
+                <div class="text">
+                    <h3>邮箱绑定</h3>
+                    <span>未绑定</span>
+                    <p>绑定邮箱，轻松梳理理财信息</p>
+                </div>
+                <div class="bnt"><span>绑定</span></div>
+                </dt>
+                <dd style="display: none;">
+                    <div class="formClass">
+                        <form id="mailForm" action="https://www.weidai.com.cn/ucenter/updateMail.html" method="post" novalidate>
+                            <ul>
+                                <li>
+                                    <label class="inputName">邮箱地址：</label>
+                                    <input type="text" name="mail" id="mail" class="inputText">
+                                </li>
+                                <li><input type="submit" class="inputBut showL" value="提交绑定"></li>
+                            </ul>
+                        </form>
+                        <script>
+                            $("#mailForm").validate({
+                                rules: {
+                                    mail:{
+                                        required:true,
+                                        email:true
+                                    }
+                                },
+                                messages: {
+                                    mail: {
+                                        required:"请输入邮箱地址",
+                                        email:"邮箱格式不正确"
+                                    }
+                                },
+                                submitHandler:function(form) {
+                                    form.submit();
+                                }
+                            })
+                        </script>
+                    </div>
+                </dd>
+            </dl>
+                <dl class="clearfix" onclick="window.location.href=银行卡.html">
+                    <dt>
+                        <i class="icon4"></i>
+                    <div class="text">
+                        <h3>银行卡绑定</h3>
+                        <span>未绑定</span>
+                        <p>鱼米理财，倡导同卡进出，一个账户对应一张卡！</p>
+                    </div>
+                    <div class="bnt"><span>绑定</span></div>
+                    </dt>
+                </dl>
+            
+            <!-- 投资人紧急联系人开始 -->
+                            <dl class="clearfix">
+                    <dt>
+                        <i></i>
+                    <div class="text">
+                        <h3>紧急联系人绑定</h3>
+                        <span>未登记</span>
+                        <p>紧急联系人绑定</p>
+                    </div>
+                    <div class="bnt"><span>绑定</span></div>
+                    </dt>
+                    <dd style="display: none;">
+                        <div class="formClass">
+                            <form id="emergencyForm" action="https://www.weidai.com.cn/ucenter/updateEmergency.html" method="post" novalidate>
+                                <ul>
+                                    <li>
+                                        <label class="inputName">紧急联系人姓名：</label>
+                                        <input type="text" name="emergencyName" id="emergencyName" class="inputText">
+                                    </li>
+                                    <li>
+                                        <label class="inputName">紧急联系人号码：</label>
+                                        <input type="text" name="emergencyMobile" id="emergencyMobile" class="inputText">
+                                    </li>
+                                    <li><input type="submit" class="inputBut showL" value="提交绑定"></li>
+                                </ul>
+                            </form>
+                            <script>
+                                $("#emergencyForm").validate({
+                                    rules: {
+                                        emergencyName:{
+                                            required:true
+                                        },
+                                        emergencyMobile:{
+                                            required:true,
+                                            mobile:true
+                                        }
+                                    },
+                                    messages: {
+                                        emergencyName:{
+                                            required:"请输入紧急联系人姓名"
+                                        },
+                                        emergencyMobile: {
+                                            required:"请输入紧急联系人号码",
+                                            mobile:"手机号码格式不正确"
+                                        }
+                                    },
+                                    submitHandler:function(form) {
+                                        form.submit();
+                                    }
+                                })
+                            </script>
+                        </div>
+                    </dd>
+                </dl>
+          <!-- 投资人紧急联系人结束 -->
+        </div>
+    </div>
+    <!--用户中心内容 end-->
+</div>
+<div class="height18"></div>
+<!--用户中心 end-->
+<div id="footer">
+    <div class="layout">
+        <div class="footerDl">
+            <dl>
+                <dt><a href="我要投资.html">我要投资</a></dt>
+                <dd><a href="新手标的.html">新手标的</a></dd>
+                <dd><a href="自动投标.html">自动投标</a></dd>
+                <dd><a href="常见问题.html" target="_blank">常见问题</a></dd>
+                <dd><a href="收费标准.html" target="_blank">收费标准</a></dd>
+                <dd><a href="债权转让规则.html" target="_blank">债权转让规则</a></dd>
+            </dl>
+            <dl>
+                <dt>安全保障</dt>
+                <dd><a href="安全准备金.html" target="_blank">安全准备金</a></dd>
+                <dd><a href="阳光保险.html" target="_blank">阳光保险</a></dd>
+                <dd><a href="实体经营.html" target="_blank">实体经营</a></dd>
+                <dd><a href="https://www.weidai.com.cn/sys/special1.html" target="_blank">阿里金融云</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="关于鱼米.html" target="_blank">关于鱼米</a></dt>
+                <dd><a href="网站地图.html">网站地图</a></dd>
+                <dd><a href="团队介绍.html" target="_blank">团队介绍</a></dd>
+                <dd><a href="企业文化.html" target="_blank">企业文化</a></dd>
+                <dd><a href="联系我们.html" target="_blank">联系我们</a></dd>
+            </dl>
+        </div>
+        <ul class="telephoneUl">
+            <li>客服专线：<em>400-992-5222</em></li>
+            <li>客服服务时间：9:00-21:00</li>
+            <li><span>关注我们：</span><a href="javascript:;" class="weixin"><img src="images/weixin(1).png" alt=""/></a><a href="http://weibo.com/weidaiwang" rel="nofollow" target="_blank" class="sina"></a></li>
+        </ul>
+        <div class="appDownload"><a href="https://www.weidai.com.cn/sys/special5.html" rel="nofollow" target="_blank"><img src="images/footerImg1.png" alt=""></a></div>
+        <div class="footerText">
+            <p>? 2012-2015 鱼米网 鱼米（杭州）金融信息服务有限公司 版权所有 浙ICP备15029561号-1 </p>
+            <a href="http://www.verisign.com/" rel="nofollow" target="_blank"><img src="images/symantec.png" alt="verisign"></a>
+            <a href="http://t.knet.cn/index_new.jsp" rel="nofollow" target="_blank"><img src="images/kexin.png" alt="可信网站"></a>
+            <a href="http://www.mps.gov.cn/n16/index.html?_v=1442896797517" rel="nofollow" target="_blank"><img src="images/gongan.png" alt="公安"></a>
+            <a href="http://www.ancun.com/" rel="nofollow" target="_blank"><img src="images/anchu.png" alt="安存"></a>
+        </div>
+    </div>
+</div>
+<div class="shade" style="display: none; width: 1920px; height: 1080px;"></div>
+<div id="enger" style="display: none;">
+      <div class="qidongBG">
+        <i class="closeBtn"></i>
+        <div class="welcome">欢迎来到鱼米网，我们&nbsp;<em>5</em>&nbsp;年累计为用户赚钱</div>
+        <span class="money"><em>426918802</em>元</span>
+        <span class="engerBtn">点击进入鱼米 &gt;&gt;</span>
+      </div>
+</div>
+
+
+<!-- 右侧浮动窗口 start-->
+    <div class="floatBtn">
+        <ul>
+            <li class="qq">
+            <a href="http://crm2.qq.com/page/portalpage/wpa.php?key=XzkzODAzMzcyMF8xMTU5OTJfNDAwOTkyNTIyMl8&uin=4009925222&f=1&ty=1&aty=0&a=&from=6" target="_blank" class="BtnName">客服<i></i></a>
+            <a href="http://crm2.qq.com/page/portalpage/wpa.php?key=XzkzODAzMzcyMF8xMTU5OTJfNDAwOTkyNTIyMl8&uin=4009925222&f=1&ty=1&aty=0&a=&from=6" target="_blank" class="what">
+              <p>在线客服</p>
+              <p class="kefuTime">9:00-17:30(工作日)</p>
+            </a>
+            </li>
+            <li class="compute">
+              <a rel="nofollow"  href="计算器.html"  target="_blank" class="BtnName">
+               计算<i></i>
+              </a>
+              <a rel="nofollow"  href="计算器.html"  target="_blank" class="what">
+               <p>在线计算器</p>
+              </a>
+            </li>
+            <li class="watch">
+            <a rel="nofollow" href="javascript:;" class="BtnName">微信<i></i></a>
+            <a rel="nofollow" href="javascript:;" class="what">
+              <div class="dingyue">
+                <p>订阅号</p>
+                <img src="images/dingyue.png" alt="看我吧！">
+              </div>
+            </a>
+            </li>
+            <li class="app">
+              <a rel="nofollow" href="javascript:;" class="BtnName">
+                app下载<i></i>
+              </a>
+              <a rel="nofollow" href="javascript:;" class="what">
+                <p>APP下载</p>
+                <img src="images/appdownload.png" alt="快拍我！">
+              </a>
+            </li>
+            <li class="kefu" style="background-color: rgb(61, 177, 250);">
+             <a href="https://www.weidai.com.cn/index.html#" class="BtnName" onclick="ysf.open();return false;">
+              七鱼<i></i>
+             </a>
+             <a href="https://www.weidai.com.cn/index.html#" class="what" onclick="ysf.open();return false;" style="display: none; width: 0px; left: 0px;">
+             <p>在线客服</p>
+             <p class="kefuTime">9:00-17:30(工作日)</p>
+             </a>
+            </li>
+        </ul>
+        <div class="century"><img src="images/daishushidai.png" alt=""></div>
+    </div>
+    <!-- 右侧浮动窗口 end-->
+    
+  <script src="js/public.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/7830fb1ba03aff3cdbd6e9cc0867b851.js" defer async></script>
+  <a class="backTop" style="display: none;"><i></i></a>
+  </body>
+  </html>

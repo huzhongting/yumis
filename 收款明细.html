@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/zbxq.css" rel="stylesheet" type="text/css">
+    <link href="css/WdatePicker.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript"  src="js/mba.js"></script>
+	<script type="text/javascript"  src="js/mv.js"></script>
+    <script type="text/javascript"  src="js/mvl.js"></script>
+    <script type="text/javascript" src="js/v.js"></script>
+	<script type="text/javascript" src="js/hm.js"></script>
+</head>
+    
+<div id="top">
+    <div class="layout">
+        <a href="手机鱼米.html" class="topApp"><i></i>手机鱼米</a>
+        <ul> 
+            <li> <a href="注册.html">注册</a> &nbsp; <a href="登录.html">登录</a> </li>
+            <li class="weixin">
+                <a href="javascript:;" class="aQQ"><i></i>官方微信</a>
+                <div class="weixinShow disNone">
+                    <img src="images/weixin.png" alt="微信扫一扫咨询早知道！">
+                    <div class="text">微信扫一扫<br>咨询早知道！</div>
+                </div>
+            </li>
+            <li><a href="帮助中心.html">帮助中心</a></li>
+            <li><a href="新手引导.html">新手引导</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="header">
+    <div class="layout clearfix">
+        <a href=".html" class="logo"><img src="images/logo.png" alt="鱼米网LOGO"></a>
+        
+        <dl>
+            <dt><a href="我的账户.html"><i class="txI"></i>我的账户
+            <i> </i>
+            </a></dt>
+            <dd> <p><a href="账户主页.html">账户主页</a></p>
+                <p><a href="资产管理.html">资产管理</a></p>
+                <p><a href="投标管理.html">投标管理</a></p>
+                <p><a href="个人资料.html">个人资料</a></p>
+                <p><a href="消息管理.html">消息管理</a></p>
+                <p><a href="邀请奖励.html">邀请奖励</a></p>
+                <i></i>
+            </dd>
+        </dl>
+        <ul id="nav">
+            <li class="curr"><a href="index.html">首页</a></li>
+            <li>
+                <a href="我要投资.html">我要投资<i></i></a>
+                <div class="show">
+                    <p><a href="javascript:">热售标</a></p>
+                    <p><a href="javascript:">新手标</a></p>
+                    <p><a href="javascript:">定时标</a></p>
+                    <p><a href="javascript:">定向标</a></p>
+                    <p><a href="javascript:">转让标</a></p>
+                    <p><a href="javascript:">信用标</a></p>
+                    <i></i>
+                </div>
+            </li>
+            <li><a href="我要借款.html">我要借款</a></li>
+            <li><a href="鱼米问答.html">鱼米问答</a></li>
+            <li>
+               <a href="鱼米简介.html">关于鱼米<i></i></a>
+                <div class="show">
+                    <p><a href="鱼米简介.html">鱼米简介</a></p>
+                    <p><a href="团队介绍.html">团队介绍</a></p>
+                    <p><a href="企业文化.html">企业文化</a></p>
+                    <p><a href="办公环境.html">办公环境</a></p>
+                    <p><a href="员工关怀.html">员工关怀</a></p>
+                    <p><a href="联系我们.html">联系我们</a></p>
+                    <i></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--用户中心-->
+		<div class="height18"></div>
+		<div id="member" class="layout borderGray bgWhite clearfix">
+		<input type="hidden" value="" id="tenderDetailIsLogin">
+		  <!--用户中心左侧-->
+		  
+<!--用户中心左侧-->
+  <div class="memberLeft">
+    <div class="userInfo">
+       <img src="images/tx.png" style="width:80px; height:80px;">
+
+       <p id="mobileLeft">155*****960</p>
+
+       <div class="icon">
+       	   <a href="https://www.weidai.com.cn/ucenter/safety.html" title="实名认证" id="realname" class="a"></a>
+	       <a title="手机认证" href="https://www.weidai.com.cn/ucenter/safety.html" id="ConfigMobile" class="b"></a>
+	       <a href="https://www.weidai.com.cn/ucenter/safety.html" title="银行卡认证" id="bankState" class="cNo"></a>
+	       <a href="https://www.weidai.com.cn/ucenter/safety.html" title="支付密码" id="paypass" class="dNo"></a></div>
+       </div>
+    <div class="userProgress clearfix">
+      <div class="progress" id="percepage" data-width="0"><tt style="width: 50%;"></tt></div>
+      <p>资料完整度：<a href="https://www.weidai.com.cn/ucenter/bid/showTenderDetail?page=1&amp;rows=10#" id="perCent" class="aBlue">50%</a></p>
+    </div>
+    <div class="mNav" id="mNavId">
+      <dl>
+        <dt><a href="我的账户.html">账户主页</a></dt>
+      </dl>
+      <dl>
+        <dt id="accountmanage" ><a href="资产管理.html">资产管理</a></dt>
+        <dd>
+          <p>
+          <a href="资产管理.html">资金统计</a><span>&gt;</span></p>
+          <p>
+          <a href="充值.html">充值</a><span>&gt;</span></p>
+          <p>
+          <a href="提现.html">提现</a><span>&gt;</span></p>
+          <p>
+          <a href="银行卡.html">银行卡</a><span>&gt;</span></p>
+        </dd>
+      </dl>
+     <dl class="curr">
+       <dt><a href="投标管理.html">投标管理</a></dt>
+        <dd>
+          <p>
+          <a href="投标管理.html">投标明细</a><span>&gt;</span></p>
+          <p>
+          <a href="投标设置.html">自动投标</a><span>&gt;</span></p>
+          <p class="active">
+          <a href="收款明细.html">收款明细</a><span>&gt;</span></p>
+          <p>
+          <a href="债权转让.html">债权转让</a><span>&gt;</span></p>
+        </dd>
+      </dl>
+      <dl>
+        <dt><a href="消息管理.html">个人资料</a></dt>
+      </dl>
+      <dl>
+        <dt><a href="消息管理.html">消息管理</a></dt>
+        <dd>
+           <p><a href="消息管理.html">我的消息</a><span>&gt;</span></p>
+           <p><a href="消息设置.html">消息设置</a><span>&gt;</span></p>
+        </dd>
+      </dl>
+      <dl>
+        <dt><a href="邀请奖励.html">邀请奖励</a></dt>
+      </dl>
+    </div>
+    <div class="height18"></div>
+    <div class="userInfo"><img src="images/weima.jpg" alt=""></div>
+    <div class="height18"></div>
+  </div>
+  <!--用户中心左侧 end-->
+
+<!--用户中心内容-->
+		<div class="memberContent">
+  <div class="chongzhiTop" id="moneyH3">
+    <h3>收款明细</h3>
+  </div>
+  <div class="chongzhiNav">
+  <ul>
+  <li class="curr" id="skmx1" onclick="setTabAll('skmx',1,2)"><a href="收款明细.html">已收款明细</a></li>
+  <li id="skmx2" onclick="setTabAll('skmx',2,2)"><a href="待收款明细.html">待收款明细</a></li>
+  </ul>
+  </div>
+  <div id="successTotalMoney">
+       <div class="successChongzhi cur">
+        <p>成功借出总额<span>0</span>元</p>
+		<p>已收本金<span>0</span>元</p>
+		<p>未收本金<span>0</span>元</p>
+		<p>已收利息<span>0</span>元</p>
+		<p>未收利息<span>0</span>元</p>
+		<input id="referenceStartTime" type="hidden" value="2015-10-05">
+		<input id="referenceEndTime" type="hidden" value="2016-01-05">
+       </div>
+		<div class="saerchClass">
+		范围：
+			<input name="startTime" id="startTime" type="text" value="2015-10-05" class="datetimeclass" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'#F{$dp.$D(\'referenceStartTime\')}',maxDate:'#F{$dp.$D(\'endTime\')}'})">
+      		-
+      		<input name="endTime" id="endTime" type="text" value="2016-01-05" class="datetimeclass" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'#F{$dp.$D(\'referenceEndTime\')}'})">
+		<a href="javascript:exportExcel()" class="aBlue">导出Excel</a>
+		<span class="tell">温馨提示：只能导出近三个月的excel</span>
+		</div>
+		<div class="height10"></div>
+  </div>
+  
+  <div class="height10"></div>
+
+  <div id="moneyManager">
+	    <!-- 已收款明细 -->
+		    <form id="receivedForm" action="/ucenter/bid/receivedDetail" method="post">
+
+			      <table class="tableClass" id="datatable" cellpadding="0" cellspacing="0">
+			        <thead>
+			          <tr>
+			          <th>期/总</th>
+			          <th>借款者</th>
+			          <th>借款标题</th>
+			          <th>应收日期</th>
+			          <th>已收日期</th>
+			          <th>已收本息</th>
+			          <th>已收利息</th>
+			          <th>罚息</th>
+			        </tr>
+			        </thead>
+			        <tbody><tr class="noList"><td colspan="8"><img src="https://static1.weidai.com.cn/static/weiPc/img/zanwujilu.png" alt=""></td></tr></tbody>
+			      </table>
+				      <!--公共分页部分开始-->
+			          			          <script src="/statics/js/paging.js"></script>
+<div class="height18"></div>
+<div id="pagefooter" class="pagination" style="display: none;">
+    <div class="fenye">
+      
+       <a class="button1" id="lastPageBtn" onclick="movePage(-1);return false;" href="#">上一页</a>
+       <em></em><span id="jump"><a class="current" id="lastPageBtn" onclick="goPage(1);return false;">1</a></span>
+       <a class="button1" id="nextPageBtn" onclick="movePage(1);return false;" href="#">下一页</a>
+      
+   </div>
+</div>
+
+<input type="hidden" name="totalInput" id="totalInput" value="0">
+<input type="hidden" name="page" id="page" value="1">
+<input type="hidden" name="rows" id="rows" value="10">
+<input type="hidden" name="formeid" id="formeid" value="receivedForm">
+<input type="hidden" name="totalPage" id="totalPage" value="0">
+			          <!--公共分页部分结束-->
+		      </form>
+      </div>  
+</div>
+<!--用户中心内容 end-->
+</div>
+ <div class="height18"></div>
+<!--用户中心 end-->
+		<input type="hidden" name="page" id="page" value="1">
+		<input type="hidden" name="rows" id="rows" value="10">
+		<input type="hidden" name="totalInput" id="totalInput" value="0">
+<div id="footer">
+    <div class="layout">
+        <div class="footerDl">
+            <dl>
+                <dt><a href="我要投资.html">我要投资</a></dt>
+                <dd><a href="新手标的.html">新手标的</a></dd>
+                <dd><a href="自动投标.html">自动投标</a></dd>
+                <dd><a href="常见问题.html" target="_blank">常见问题</a></dd>
+                <dd><a href="收费标准.html" target="_blank">收费标准</a></dd>
+                <dd><a href="债权转让规则.html" target="_blank">债权转让规则</a></dd>
+            </dl>
+            <dl>
+                <dt>安全保障</dt>
+                <dd><a href="安全准备金.html" target="_blank">安全准备金</a></dd>
+                <dd><a href="阳光保险.html" target="_blank">阳光保险</a></dd>
+                <dd><a href="实体经营.html" target="_blank">实体经营</a></dd>
+                <dd><a href="https://www.weidai.com.cn/sys/special1.html" target="_blank">阿里金融云</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="关于鱼米.html" target="_blank">关于鱼米</a></dt>
+                <dd><a href="网站地图.html">网站地图</a></dd>
+                <dd><a href="团队介绍.html" target="_blank">团队介绍</a></dd>
+                <dd><a href="企业文化.html" target="_blank">企业文化</a></dd>
+                <dd><a href="联系我们.html" target="_blank">联系我们</a></dd>
+            </dl>
+        </div>
+        <ul class="telephoneUl">
+            <li>客服专线：<em>400-992-5222</em></li>
+            <li>客服服务时间：9:00-21:00</li>
+            <li><span>关注我们：</span><a href="javascript:;" class="weixin"><img src="images/weixin(1).png" alt=""/></a><a href="http://weibo.com/weidaiwang" rel="nofollow" target="_blank" class="sina"></a></li>
+        </ul>
+        <div class="appDownload"><a href="https://www.weidai.com.cn/sys/special5.html" rel="nofollow" target="_blank"><img src="images/footerImg1.png" alt=""></a></div>
+        <div class="footerText">
+            <p>? 2012-2015 鱼米网 鱼米（杭州）金融信息服务有限公司 版权所有 浙ICP备15029561号-1 </p>
+            <a href="http://www.verisign.com/" rel="nofollow" target="_blank"><img src="images/symantec.png" alt="verisign"></a>
+            <a href="http://t.knet.cn/index_new.jsp" rel="nofollow" target="_blank"><img src="images/kexin.png" alt="可信网站"></a>
+            <a href="http://www.mps.gov.cn/n16/index.html?_v=1442896797517" rel="nofollow" target="_blank"><img src="images/gongan.png" alt="公安"></a>
+            <a href="http://www.ancun.com/" rel="nofollow" target="_blank"><img src="images/anchu.png" alt="安存"></a>
+        </div>
+    </div>
+</div>
+<div class="shade" style="display: none; width: 1920px; height: 1080px;"></div>
+<div id="enger" style="display: none;">
+      <div class="qidongBG">
+        <i class="closeBtn"></i>
+        <div class="welcome">欢迎来到鱼米网，我们&nbsp;<em>5</em>&nbsp;年累计为用户赚钱</div>
+        <span class="money"><em>426918802</em>元</span>
+        <span class="engerBtn">点击进入鱼米 &gt;&gt;</span>
+      </div>
+</div>
+
+
+<!-- 右侧浮动窗口 start-->
+    <div class="floatBtn">
+        <ul>
+            <li class="qq">
+            <a href="http://crm2.qq.com/page/portalpage/wpa.php?key=XzkzODAzMzcyMF8xMTU5OTJfNDAwOTkyNTIyMl8&uin=4009925222&f=1&ty=1&aty=0&a=&from=6" target="_blank" class="BtnName">客服<i></i></a>
+            <a href="http://crm2.qq.com/page/portalpage/wpa.php?key=XzkzODAzMzcyMF8xMTU5OTJfNDAwOTkyNTIyMl8&uin=4009925222&f=1&ty=1&aty=0&a=&from=6" target="_blank" class="what">
+              <p>在线客服</p>
+              <p class="kefuTime">9:00-17:30(工作日)</p>
+            </a>
+            </li>
+            <li class="compute">
+              <a rel="nofollow" href="计算器.html" target="_blank" class="BtnName">
+               计算<i></i>
+              </a>
+              <a rel="nofollow" href="计算器.html" target="_blank" class="what">
+               <p>在线计算器</p>
+              </a>
+            </li>
+            <li class="watch">
+            <a rel="nofollow" href="javascript:;" class="BtnName">微信<i></i></a>
+            <a rel="nofollow" href="javascript:;" class="what">
+              <div class="dingyue">
+                <p>订阅号</p>
+                <img src="images/dingyue.png" alt="看我吧！">
+              </div>
+            </a>
+            </li>
+            <li class="app">
+              <a rel="nofollow" href="javascript:;" class="BtnName">
+                app下载<i></i>
+              </a>
+              <a rel="nofollow" href="javascript:;" class="what">
+                <p>APP下载</p>
+                <img src="images/appdownload.png" alt="快拍我！">
+              </a>
+            </li>
+            <li class="kefu" style="background-color: rgb(61, 177, 250);">
+             <a href="https://www.weidai.com.cn/index.html#" class="BtnName" onclick="ysf.open();return false;">
+              七鱼<i></i>
+             </a>
+             <a href="https://www.weidai.com.cn/index.html#" class="what" onclick="ysf.open();return false;" style="display: none; width: 0px; left: 0px;">
+             <p>在线客服</p>
+             <p class="kefuTime">9:00-17:30(工作日)</p>
+             </a>
+            </li>
+        </ul>
+        <div class="century"><img src="images/daishushidai.png" alt=""></div>
+    </div>
+    <!-- 右侧浮动窗口 end-->
+    
+  <script src="js/public.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/7830fb1ba03aff3cdbd6e9cc0867b851.js" defer async></script>
+  <a class="backTop" style="display: inline;"><i></i></a>
+  </body>
+  </html>

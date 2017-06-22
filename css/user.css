@@ -1,0 +1,494 @@
+#user i,.onCorrect,.onFocus,.onError,label.error {
+	background:url(../images/user.png)
+}
+#user .layout,#user.layout {
+	width:1000px
+}
+label.error {
+	float:left;
+	line-height:38px;
+	color:#e3393c;
+	padding-left:20px;
+	background-position:-184px -49px;
+	margin-left:12px;
+	display:inline;
+	background-repeat:no-repeat;
+	background-color:#fff
+}
+#user .regStep {
+	border-bottom:#e6e6e6 solid 3px;
+	height:90px;
+	position:relative
+}
+#user .regStep li {
+	float:left;
+	width:333px;
+	text-align:center;
+	height:90px;
+	line-height:60px;
+	font-size:14px;
+	position:relative;
+	z-index:10
+}
+#user .regStep li i {
+	position:absolute;
+	left:42%;
+	top:65px;
+	width:52px;
+	height:52px;
+	line-height:52px;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	color:#333
+}
+#user .regStep li.curr {
+	color:#3db1fa
+}
+#user .regStep li.curr i {
+	background-position:-100px 0;
+	color:#fff
+}
+#user .regStep .line {
+	position:absolute;
+	left:0;
+	top:0;
+	border-bottom:#3db1fa solid 3px;
+	height:90px
+}
+#user .userForm {
+	float:left;
+	width:100%;
+	position:relative
+}
+#user .userForm ul {
+	float:left;
+	width:100%
+}
+#user .userForm ul li {
+	float:left;
+	width:100%;
+	padding:10px 0
+}
+#user .userForm ul li .textInput {
+	float:left;
+	height:20px;
+	width:200px;
+	line-height:20px;
+	padding:8px 10px;
+	border:#ccc solid 1px;
+	font-size:14px;
+	border-radius:2px
+}
+#user .userForm ul li .onFocus {
+	float:left;
+	line-height:38px;
+	color:#93adc3;
+	padding-left:20px;
+	background-position:-184px 11px;
+	margin-left:12px;
+	display:inline;
+	background-repeat:no-repeat;
+	background-color:#fff
+}
+#user .userForm ul li .onCorrect {
+	float:left;
+	margin-top:12px;
+	color:#93adc3;
+	height:16px;
+	width:16px;
+	background-position:-184px -30px;
+	margin-left:12px;
+	display:inline;
+	background-repeat:no-repeat background-color:#fff
+}
+#user .userForm ul li .onError {
+	float:left;
+	line-height:38px;
+	color:#e3393c;
+	padding-left:20px;
+	background-position:-184px -49px;
+	margin-left:12px;
+	display:inline;
+	background-repeat:no-repeat;
+	background-color:#fff
+}
+#user .userForm .bnt {
+	float:left;
+	display:inline
+}
+#user .userForm .bnt button {
+	margin-left:218px;
+	background:#3db1fa;
+	border:0;
+	width:220px;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+	cursor:pointer;
+	border-radius:3px;
+	font-weight:bold;
+	outline:0
+}
+#user .userForm .bnt button:hover {
+	background:#53bafa
+}
+#user .userForm .bnt button.inputButNo {
+	background:#ededed;
+	color:#999
+}
+#user .userForm li.code input {
+	width:70px
+}
+#user .userForm li.code img {
+	float:left;
+	height:38px;
+	width:120px;
+	margin-left:10px;
+	display:inline
+}
+#user .userForm li.code a.aBlue {
+	float:left;
+	line-height:38px;
+	font-size:14px;
+	margin-left:12px;
+	display:inline
+}
+#user .userForm ul li.hover .textInput {
+	border:#3db1fa solid 1px
+}
+#user .regUl {
+	margin-top:50px;
+	padding-bottom:30px
+}
+#user .regUl li .name {
+	float:left;
+	width:100px;
+	font-size:14px;
+	height:38px;
+	line-height:38px;
+	overflow:hidden;
+	margin-left:116px;
+	display:inline
+}
+#user .regUl li .name em {
+	color:#e3393c;
+	vertical-align:-2px
+}
+#user .regUl li.invitation .name {
+	padding-left:11px;
+	width:89px
+}
+#user .regUl li.invitation em {
+	color:#fff
+}
+#user .regUl li.invitation span {
+	float:left;
+	line-height:20px;
+	padding:8px 0;
+	font-size:14px;
+	color:#0085ec
+}
+#user .regUl li.agreement {
+	font-size:14px
+}
+#user .regUl li.agreement label {
+	float:left
+}
+#user .regUl li.agreement input {
+	float:left;
+	height:14px;
+	width:14px;
+	overflow:hidden;
+	display:inline;
+	padding:0;
+	margin:5px 6px 0 218px;
+	display:inline
+}
+#user .regUl li.tips i {
+	float:left;
+	height:20px;
+	width:20px;
+	background-position:0 -80px;
+	margin:0 6px 0 218px;
+	display:inline
+}
+#user .regBanner {
+	position:absolute;
+	right:33px;
+	top:80px
+}
+#user .moblieUl {
+	padding-bottom:80px
+}
+#user .moblieUl li .name {
+	width:120px
+}
+#user .moblieUl li.text p {
+	margin-left:118px;
+	font-size:14px
+}
+#user .moblieUl li.moblie a {
+	line-height:40px;
+	font-size:14px
+}
+#user .moblieUl li.moblie span {
+	float:left;
+	line-height:40px;
+	font-size:14px;
+	color:#e3393c;
+	width:158px
+}
+#user .moblieUl li.moblieCode .textInput {
+	width:70px
+}
+#user .moblieUl li.moblieCode .buttonInput {
+	float:left;
+	background:#3db1fa;
+	border:0;
+	width:140px;
+	height:38px;
+	border:0;
+	margin-left:10px;
+	display:inline;
+	border-radius:2px;
+	color:#fff;
+	font-size:14px;
+	cursor:pointer
+}
+#user .moblieUl li.moblieCode .noBut {
+	background:#ededed;
+	color:#999
+}
+#user .userForm .moblieUl .bnt button {
+	margin-left:238px;
+	margin-top:20px;
+	width:240px
+}
+#user .moblieUl li.tips i {
+	margin:0 6px 0 238px;
+	display:inline
+}
+.regSuccess {
+	text-align:center;
+	margin-top:80px;
+	font-size:14px;
+	padding-bottom:80px
+}
+.regSuccess h1 {
+	font-size:28px;
+	font-weight:normal;
+	padding:15px 0;
+	color:#3db1fa
+}
+.regSuccess p {
+	font-size:18px;
+	color:#3db1fa
+}
+.regSuccess a.aLink {
+	display:inline-block;
+	background:#3db1fa;
+	width:180px;
+	height:40px;
+	line-height:40px;
+	color:#fff;
+	font-size:16px;
+	border-radius:3px;
+	font-weight:bold;
+	margin:50px 0 30px 0
+}
+.regSuccess a.aLink:hover {
+	background:#53bafa;
+	text-decoration:none
+}
+#user .regSuccess .tips i {
+	display:inline-block;
+	height:20px;
+	width:20px;
+	vertical-align:middle;
+	background-position:0 -80px;
+	margin:0 6px 0 0
+}
+#guideBg {
+	position:fixed;
+	width:100%;
+	height:100%;
+	background:#000;
+	top:0;
+	left:0;
+	_position:absolute;
+	filter:alpha(opacity=70);
+	-moz-opacity:.7;
+	-khtml-opacity:.7;
+	opacity:.7;
+	z-index:10000
+}
+#jjId {
+	position:fixed;
+	width:600px;
+	height:600px;
+	_position:absolute;
+	top:0;
+	display:none;
+	background:url(../images/s.png) no-repeat;
+	z-index:10001
+}
+#jjId .bnt a {
+	display:inline-block;
+	height:600px;
+	width:600px
+}
+.login {
+	background:url(../images/banner_2.jpg) #fff7d5 center no-repeat;
+	padding-bottom:40px
+}
+.login .loginForm {
+	float:right;
+	background:#fff;
+	width:300px;
+	padding:20px;
+	margin-top:40px
+}
+.login .loginForm h3 {
+	font-size:16px
+}
+.login .loginForm ul li {
+	float:left;
+	width:100%;
+	padding:10px 0
+}
+.login .loginForm ul li .name {
+	float:left;
+	font-size:14px;
+	height:38px;
+	line-height:38px;
+	overflow:hidden;
+	margin-right:12px
+}
+.login .loginForm ul li .name span {
+	display:inline-block;
+	width:14px
+}
+.login .loginForm ul li .textInput {
+	float:left;
+	height:20px;
+	width:200px;
+	line-height:20px;
+	padding:8px 10px;
+	border:#ccc solid 1px;
+	font-size:14px;
+	border-radius:2px
+}
+.login .loginForm ul li.hover .textInput {
+	border:#3db1fa solid 1px
+}
+.login .loginForm .error {
+	color:#e3393c;
+	float:left;
+	margin-left:54px;
+	display:inline;
+	height:20px;
+	line-height:20px;
+	overflow:hidden
+}
+.login .loginForm ul li.code .textInput {
+	width:56px
+}
+.login .loginForm ul li.code img {
+	float:left;
+	height:38px;
+	width:90px;
+	margin-left:5px;
+	display:inline
+}
+.login .loginForm ul li.code a.aBlue {
+	float:left;
+	line-height:38px;
+	font-size:14px;
+	margin-left:5px
+}
+.login .loginForm ul li.namePassword label {
+	float:left;
+	font-size:14px;
+	height:20px;
+	line-height:20px;
+	color:#999
+}
+.login .loginForm ul li.namePassword input {
+	float:left;
+	height:14px;
+	width:14px;
+	overflow:hidden;
+	display:inline;
+	padding:0;
+	margin:4px 6px 0 54px
+}
+.login .loginForm ul li.namePassword a.aBlue {
+	float:right;
+	margin-right:22px;
+	display:inline;
+	font-size:14px
+}
+.login .loginForm ul li.bnt button {
+	margin-left:54px;
+	background:#3db1fa;
+	border:0;
+	width:224px;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+	cursor:pointer;
+	border-radius:3px;
+	font-weight:bold;
+	outline:0
+}
+.login .loginForm ul li.bnt button:hover {
+	background:#53bafa
+}
+.login .loginForm ul li p {
+	font-size:14px;
+	margin-left:54px
+}
+.jaddpop{
+	width: 560px;
+	padding:30px 15px 20px;
+    position:fixed;
+    height: 500px;
+    z-index: 100;
+    margin: 0 auto;
+    top: 20%;
+    left: 35%;
+    background: #fff;
+	z-index:2050;
+	border-radius:5px;
+	box-sizing:border-box;
+}
+.jaddpop p{
+	margin-bottom:10px;
+	line-height:1.7;
+}
+.jpopmask{
+	position:fixed;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	background:#000;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+	z-index:2000;
+}
+.jpop-content{
+	max-height:450px;
+	overflow:auto;
+}
+.jaddpopclose{
+	display:block;
+	width:20px;
+	height:20px;
+	font-size:20px;
+	position:absolute;
+	right:10px;
+	top:0;
+	cursor:pointer;
+}
